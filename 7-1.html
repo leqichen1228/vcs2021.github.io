@@ -1,0 +1,157 @@
+<head>
+<title>Week 10-11</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+	@font-face {
+    font-family: TitleFont;
+    src: url(AeonikProTRIAL-Regular.otf);
+	}
+	@font-face {
+    font-family: MyFont;
+    src: url(AeonikProTRIAL-Light.otf);
+	}
+
+	#refresh_button{
+		position: absolute;
+		right: 1.1vw;
+		top:4.6vw;
+		width: 2.2vw;
+		height: auto;
+	}
+	#home_button{
+		position: absolute;
+		right: 1vw;
+		top:1.5vw;
+		width: 2.6vw;
+		height: auto;
+	}
+	h3{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		top:0;
+		position: absolute;
+		line-height: 1vw;
+	}
+	h1{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		position: absolute;
+		top:2.5vw;
+	}
+	img{
+		height: auto;
+		vertical-align: middle;
+		text-align: : middle;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.pieces{
+		border-width: 2px;
+		border-style: solid;
+		border-color: black;
+		position: absolute;
+		font-family: TitleFont;
+		font-size:1vw;
+		line-height: 1.3vw;
+		background-color: #ffffff;
+		display: inline-block;
+		text-align: left;
+		margin: auto;	
+		vertical-align: middle;	
+		justify-content: center;
+	}
+	#div1{		
+		top:8vw;
+		left:0.5vw;
+		width: 60vw;
+		height: 22vw;				
+	}
+
+	#div2{		
+		top:30vw;
+		left:0.5vw;
+		width: 60vw;
+		height: 14vw;
+	}
+
+	#div3{		
+		top:8vw;
+		left:60.5vw;
+		width: 38vw;
+		height: 36vw;		
+	}
+
+	#p1, #p2, #p3{
+		position: relative;
+  		float: left;
+  		padding: 30px;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	a:link, a:visited, a:active{
+		text-decoration: none;
+		color:black;
+	}
+	a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+	.links:link, .links:hover{
+		text-decoration: underline;
+		color:blue;
+	}
+
+		
+</style>
+<img id="refresh_button" src="icons/refresh.png" onClick="window.location.reload();"></img>
+<a href="index.html"><img id="home_button" src="icons/home.png"></a>
+<h3>Visual Culture Seminar 2021 Fall</h3>
+<h1>Week 10-11 - Allan Yu, Frank Chimero, Laurel Schwulst</h1>
+<div class="pieces" id="div1"><div id="p1"></div></div>
+<div class="pieces" id="div2"><div id="p2"></div></div>
+<div class="pieces" id="div3"><a href="7-2.html"><div id="p3"></div></a></div>
+
+<script> 
+(function newFact1() {
+  var facts1 = 
+  ["<a href='https://vimeo.com/amtparsons/review/646066541/c49770a917'>Ashley: if you consider staying at the same company for several years, and what's the advantage and disadvantages of switching around? Allan: That is a good question; first is influence, which takes a long time to build up the influence at the company. Influence is about people knowing you and knowing you are working on this project. Especially during the covid time, you might not be exposed to everyone and lose influence when you join a new company.</a>", 
+  "<a href='https://vimeo.com/amtparsons/review/646066541/c49770a917'>Allan: Also, you lose institutional knowledge every time someone gets hired and is hired beneath you, and they don't have much institutional knowledge; this is because you are more senior now. So, in other words, the pyramid gets built underneath you, not above you. So you are more easily to get a promotion.</a>", 
+  "<a href='https://vimeo.com/amtparsons/review/646066541/c49770a917'>Karan: What is your experience interviewing facebook? Whats their hiring process? Allan: I was friends with one of the Facebook design directors, and we often casually got coffee, but i still didn't think i could get the job that time. It was hard, i was scared that time. So I guess i didn't want to use that relationship to get me something.</a>",
+  "<a href='https://vimeo.com/amtparsons/review/646066541/c49770a917'>Allan: Make sure your design work looks good; the baseline is to make sure you can do visual design. The second layer is your design thinking. Finally, make sure you have a case study, 1-2 case studies, and present well when you interview Facebook.</a>",
+  "<a href='https://vimeo.com/amtparsons/review/646066541/c49770a917'>Maud: What do people care about the most in their portfolio? How do you maintain your design voice? Allan: Most of the time, people review your portfolio between meetings and do yes and no. You need to have visually stood out, and i think you should have your thought process. for example, whats the user problems, how do you decide this problem is important? What were the goals? What was your hypothesis? Why is it all-important? Show a bunch of versions of your work. they would like to know your narrative story behind the work.</a>",
+  "Ashley: What do you do when you feel burned out? Allan: I don't know. I don't have a good solution for now, which is I don't know how to disconnect with work, i know it is boring, that feeling sucks. You need to suffer. Maybe thinking about my parents, they are working much harder than me. If they can do it, why can't I? All i need to do is just shut up and do the work.</a>"
+  ];
+
+  var randomFact1 = Math.floor(Math.random() * facts1.length);
+  document.getElementById('p1').innerHTML = facts1[randomFact1];
+})();
+
+(function newFact2() {
+  var facts2 = 
+  [ 
+  "<a class='links' href='https://frankchimero.com/blog/2015/the-webs-grain/'>The Web’s Grain, Frank Chimero (2015)</a>",
+  "<a class='links' href='https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/'>My website is a shifting house next to a river of knowledge. What could yours be?, Laurel Schwulst (2018)</a>"
+ ];
+
+  var randomFact2 = Math.floor(Math.random() * facts2.length);
+  document.getElementById('p2').innerHTML = facts2[randomFact2];
+})();
+
+(function newFact3() {
+  var facts3 = 
+  [ "Maria: Laurel Schwulst defines a website as a “file or bundle of files living on a server somewhere,” this is a very simple yet accurate definition. When I’ve worked on a portfolio/personal website in the past I have always felt like it is something that needs to be finished before being shared. Schwulst defies this idea and states that a “website or anything interactive, is inherently unfinished” and “that is the beauty of it.” The metaphor of thinking of websites as a plant and how they can’t be rushed essentially encourages creators to enjoy the process and think of it, regardless of the outcome, as personal growth.",
+  "Maria: Frank Chimero writes about the experiences and conflicts he faced while working with tech, more specifically web development. The more he worked in the field the more his curiosity would diminish, almost leaving him with a feeling of disappointment. He goes on to find new ways of thinking about the web and makes a comparison with art, specifically David Hockney’s photographic work (which I thought was incredible). This was an interesting comparison and I understand the point he is trying to make. However, I don’t think creators need to decide whether or not to treat the web as a blank canvas or a material to build with. Take Hockey as an example again, he made these photographic series and then went back to making paintings on canvas, probably did more experimenting with material but didn’t have to define how his practice will treat the material for good. ",
+  "Maud: Frank Chimero’s text. gives a good understanding of the importance of designing with content first, and responsive design. When designing for web and mobile it is also important to know the limitations of the web. I agree that Apple’s product pages used to be a pain back in 2015, but I think they have improved a lot. Either they learned from their mistakes, or computer and network power just improved so that we’re now able to scroll without disruption. The current pages work smoothly and give a great experience of the product. Frank wrote about Apple’s website that “It is fascinating that you can do that, but it’s really not what a website is supposed to do.”. But I feel like this sentiment clashes with his praise of Hockney who used photography in a way that he probably wasn’t “supposed to”, so it made me a little confused about what he was trying to say.",
+  "Maya: Frank goes over designing for the web and how to manage content based on your constrictions. He uses an awful lot of videos to communicate his point, but I did find them helpful. He calls out how we expect technology to solve our limitations but sometimes it can produce more than them. Laurel goes over her definition of a website and why we have them. Things I honestly took for granted and never actually thought about. ",
+  "Antoinette: I have a vivid memory of being on the computer one day after school, logging onto Neopets to collect the daily collectibles and to play some games – just to have my game interrupted because my mom received a call on the landline. Frank’s audio at the beginning of his post The Web’s Grain evoked the feeling exactly like how described it, “a shot of whiskey” being the perfect metaphor with the sense of age to it. Having been working on multiple projects that have to (at least conceptually) live in a digital framework over the past months, I thoroughly enjoyed this pair of readings — as a kind of reality check to recalibrate our approach in designing for the web. The two different ways Chimero and Schwulst dissect what a website is are simple, and effective in reminding us to not overthink; a quietude for meditation we need in the constant digital cacophony, where we could easily get lost in the aggressive elbowing for attention. "
+  ];
+
+  var randomFact3 = Math.floor(Math.random() * facts3.length);
+  document.getElementById('p3').innerHTML = facts3[randomFact3];
+})();
+
+</script>

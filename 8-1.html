@@ -1,0 +1,164 @@
+<head>
+<title>Week 11-13</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+	@font-face {
+    font-family: TitleFont;
+    src: url(AeonikProTRIAL-Regular.otf);
+	}
+	@font-face {
+    font-family: MyFont;
+    src: url(AeonikProTRIAL-Light.otf);
+	}
+
+	#refresh_button{
+		position: absolute;
+		right: 1.1vw;
+		top:4.6vw;
+		width: 2.2vw;
+		height: auto;
+	}
+	#home_button{
+		position: absolute;
+		right: 1vw;
+		top:1.5vw;
+		width: 2.6vw;
+		height: auto;
+	}
+	h3{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		top:0;
+		position: absolute;
+		line-height: 1vw;
+	}
+	h1{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		position: absolute;
+		top:2.5vw;
+	}
+	img{
+		height: auto;
+		vertical-align: middle;
+		text-align: : middle;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.pieces{
+		border-width: 2px;
+		border-style: solid;
+		border-color: black;
+		position: absolute;
+		font-family: TitleFont;
+		font-size:1vw;
+		line-height: 1.3vw;
+		background-color: #ffffff;
+		display: inline-block;
+		text-align: left;
+		margin: auto;	
+		vertical-align: middle;	
+		justify-content: center;
+	}
+	#div1{		
+		top:8vw;
+		left:0.5vw;
+		width: 60vw;
+		height: 22vw;				
+	}
+
+	#div2{		
+		top:30vw;
+		left:0.5vw;
+		width: 60vw;
+		height: 14vw;
+	}
+
+	#div3{		
+		top:8vw;
+		left:60.5vw;
+		width: 38vw;
+		height: 36vw;		
+	}
+
+	#p1, #p2, #p3{
+		position: relative;
+  		float: left;
+  		padding: 30px;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	a:link, a:visited, a:active{
+		text-decoration: none;
+		color:black;
+	}
+	a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+	.links:link, .links:hover{
+		text-decoration: underline;
+		color:blue;
+	}
+
+		
+</style>
+<img id="refresh_button" src="icons/refresh.png" onClick="window.location.reload();"></img>
+<a href="index.html"><img id="home_button" src="icons/home.png"></a>
+<h3>Visual Culture Seminar 2021 Fall</h3>
+<h1>Week 11-13 - Anthony Dunne, Fiona Raby, Lynn</h1>
+<div class="pieces" id="div1"><a href='https://vimeo.com/amtparsons/review/651159006/e6ff549eb8'><div id="p1"></div></a></div>
+<div class="pieces" id="div2"><div id="p2"></div></div>
+<div class="pieces" id="div3"><a href="8-2.html"><div id="p3"></div></a></div>
+
+<script> 
+(function newFact1() {
+  var facts1 = 
+  ["Vita: since you study your undergrad, something is not related to design, so i am wondering is that affecting your work now ", 
+  "Lynn: I hope it is still influencing, I mean, like I said, nothing truly lost, sometimes physical industrial design degree I mean all that stuff can be tab to make it more interesting practice for your self you know.",
+  "Lynn: We all know how to do user flow, and we all know how to do UI/UX design. What makes it more interesting is all that other stuff you learned before the program. So I think psychology certainly has played into understanding humans, behaviors. I mean, I study specifically cognitive psychology, so it likes how we perceive it, and sense things, commission visual perception, certainly has helped you with the color theory you know, that I am I think my interest in college was just about people and I try to figure out what makes people tick, and that's kind of how I end up doing special work because humans have to go into my spaces and thinking about my user interaction doesn't get more about human needs and behavior and that you know, so that's that's been an interesting like thread i guess. ",
+  "Lucille: I just remembered when you said you were like the office manager back in LA, answering phones and getting coffees... what point is the kick in, or this is something you think you have the talent for?",
+  "Lynn: No, I have no talent for this, they send me to school, they were like you're so bad at this, they dont let me do their marketing stuff and I was like i dont know how to do the design, so they send me to the indesign class, and then i was like i dont understand fonts, so they send me to the typography class, they really open the door for me to take classes at work and I was like oh my God I like this, I love learning, and it blew my mind in class and was like I need to go back to school for this cause I love learning.",
+  "Lynn: I've never taken notes because I want it to, that is the first moment I had in school like I wanted to understand this, and that's wet changed me. I wasn't very good at all, you know I hustled and took the classes at night after work so that I can have a portfolio to go back to grad school, like many of you did I'm sure and found any chance I could make some side projects, you should see my portfolio i apply for school, it's like anything i had i throw it there, they realize that I was interested in this. So they kept giving me more and more opportunities to make proposals. They had a big event for their companies like brands. So for that, I mean there are ways to make your way and opportunity when you're in the house.",
+  "Luiza: I have to ask about collaboration; you don't limit your ideas based on your capabilities. You have the strategy and ideas that are best suited for each project, and then you go on to figure out how you're going to do that, which is really brave and amazing, but it involves a lot of commissioning other people working with teams, and I assume a lot of admin timeline building and all the stuff, and I know from our interactions that you're really good at add organizing so yeah maybe talk a little bit about this other side of design that's maybe less visual or creative.",
+  "Lynn: I have a mug that says I'm a designer, but on the back, it says I am a project manager, or maybe its for my project manager days, because we don't control filming, or photogrammetry scanning, or even web development like that's not what we do, and then it doesn't make sense for us to hire for that because every project is different so hiring like a specific kind of software developer doesn't make sense either because it changes all the time. So we have a trusted list of people we go to to ask if they've worked with someone good who has done this and usually someone you know who comes out of the woodwork. Our network is so important to finding the right talent and people to do this"
+  ];
+
+  var randomFact1 = Math.floor(Math.random() * facts1.length);
+  document.getElementById('p1').innerHTML = facts1[randomFact1];
+})();
+
+(function newFact2() {
+  var facts2 = 
+  [ 
+  "<a class='links' href='https://www.dropbox.com/s/re0zlygzakrswkt/Pages%20from%20Design%20Noir%20-%20The%20Secret%20Life%20of%20Electronic%20Objects%20%281%29.pdf?dl=0'>Design Noir—The Secret Life of Electronic Objects, Anthony Dunne and Fiona Raby (2001)</a>",
+  "<a class='links' href='http://dunneandraby.co.uk/'>Dunne & Raby</a>",
+  "<a class='links' href='https://vimeo.com/458637097'>Fiona Raby and Anthony Dunne</a>"
+ ];
+
+  var randomFact2 = Math.floor(Math.random() * facts2.length);
+  document.getElementById('p2').innerHTML = facts2[randomFact2];
+})();
+
+(function newFact3() {
+  var facts3 = 
+  [
+  "Lena: Noir products are everywhere, but I haven’t truly thought about defining them with the word “Noir”. Anthony Dunne and Fiona Raby describe Noir product as something that allows the user to be the controller and protagonist. But they also comment that these products “perplex rather than comfort”, “creates dilemmas rather than resolving them”. I think this really depends on who the user is. For my last project I needed the sound effect of sending iMessages. I found the sound effect on Youtube. But I was shocked to see that many people under comments said that they were happy to find this sound effect to pretend to be talking to a lot of girls or to fake that they had many friends… The perception of how useful a Noir product really depends on the user’s needs. Obviously these Noir products were born due to emotional or social needs originated from “loneliness, deception, paranoia, hopelessness and lust”. We have to admit that these feelings and needs are human. There is nothing shady about them.",
+  "Carla: A famous psychologist Maslow ever put forward the hierarchy theory of human needs, which means that when people's low-level needs, such as the needs of food, clothing, housing, and transportation are met, they will pursue higher-level spiritual needs, such as the needs of self-realization and respect. With the high development of material civilization and spiritual civilization today and the continuous improvement of economic level, human needs have long gone far beyond these basic needs, even beyond the basic material and spiritual needs, and more pursue spiritual pleasure.",
+  "Maria: The products under the category of Design Noir seem dystopian yet in some ways realistic, it's not too hard to understand the need for them. Fiona Raby and Anthony Dunne write about the ways in which product design has encouraged passivity from its buyers. According to them, an alternative to this passivity is Design Noir which encourages existentialism while challenging and disturbing what is considered the norm. The products that fit this category focus on how to create sensations through their experience, not their aesthetics (how they look or feel). I personally perceive these products as art pieces that work as humorous or dark critiques of today’s society. The euthanasia machine and gun with a memory stood out to me. These are topics that have generated debates around the world for long periods of time. These design noir products are risky and yet, extremely necessary.", 
+  "Austin: This reading was definitely an interesting one to say the least. Fiona Raby and Anthony Dunne have written a book about technology (originally published in 2001) that still holds relevance today. Raby and Dunne present the current state of product design in analogy to the Hollywood blockbuster and instead urges readers to think about the opposite, Design Noir. This alternative approach to design is focused on deviant impulses, anxieties and contradictory emotions. It’s design that focuses the darker, underrepresented needs of people.",
+   "Hannah: Noir products would be a fusion of psychology and everyday life. This would allow the user to become the protagonist of the narrative, rather than the consumer of the narrative.Electronic products and services could enrich and expand our experience of everyday life rather than closing it down, they could become a medium for experiencing complex aesthetic situations. To achieve this, designers would have to think about products and services very differently. We propose a new category of objects that are complex aesthetic and psychological experiences within everyday life, not like a video or library book. To achieve this, designers would have to think about products and services very differently.",
+  "Yiyao: Most designs are good in their own right, and no designer wants to create bad, dark designs. However, I think the factor that influences these designs is not the person who designs them but the person who uses them. Designers cannot require all users to use the way they are designed. And human beings are complex, and the unpleasant nature of human beings affects the relationship between product design and people. The relationship between the individual and the product is much more complicated than the designer and the product.",
+  "Yiyao: On the other hand, I don't think there is a conflict or a gap between everyday life and surreal technology. I think surreal technology is just a part of modern people's daily life. Of course, any new technological revolution will affect people's everyday lives, and there will probably be higher advances than surreal technology afterward. But we must admit that the development of contemporary electronic products has primarily contributed to the growth of noir design.",
+  "Antoinette: I think it is vital for designers to understand that our primary jobs are not to submit to capitalism and make things pretty, but to provide solutions. Design Noir is an interesting approach to reevaluating what “real” consumer needs are. I loved the term “ab-user” in the reading — it gives significance to the user experience that highlights the desire path of the products, which leads to the realm of potentials that the products or environments have. I’m not sure if I agree with the darker, rather unethical framework: the unacknowledged needs don’t always have to be in the themes of loneliness / deception / paranoia / hopelessness / lust."
+  ];
+
+  var randomFact3 = Math.floor(Math.random() * facts3.length);
+  document.getElementById('p3').innerHTML = facts3[randomFact3];
+})();
+
+</script>

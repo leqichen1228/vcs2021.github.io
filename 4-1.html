@@ -1,0 +1,158 @@
+<head>
+<title>Week 6-7</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+	@font-face {
+    font-family: TitleFont;
+    src: url(AeonikProTRIAL-Regular.otf);
+	}
+	@font-face {
+    font-family: MyFont;
+    src: url(AeonikProTRIAL-Light.otf);
+	}
+
+	#refresh_button{
+		position: absolute;
+		right: 1.1vw;
+		top:4.6vw;
+		width: 2.2vw;
+		height: auto;
+	}
+	#home_button{
+		position: absolute;
+		right: 1vw;
+		top:1.5vw;
+		width: 2.6vw;
+		height: auto;
+	}
+	h3{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		top:0;
+		position: absolute;
+		line-height: 1vw;
+	}
+	h1{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		position: absolute;
+		top:2.5vw;
+	}
+	img{
+		height: auto;
+		vertical-align: middle;
+		text-align: : middle;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.pieces{
+		border-width: 2px;
+		border-style: solid;
+		border-color: black;
+		position: absolute;
+		font-family: TitleFont;
+		font-size:1vw;
+		line-height: 1.3vw;
+		background-color: #ffffff;
+		display: inline-block;
+		text-align: left;
+		margin: auto;	
+		vertical-align: middle;	
+		justify-content: center;
+	}
+	#div1{		
+		top:8vw;
+		left:0.5vw;
+		width: 60vw;
+		height: 22vw;				
+	}
+
+	#div2{		
+		top:30vw;
+		left:0.5vw;
+		width: 60vw;
+		height: 14vw;
+	}
+
+	#div3{		
+		top:8vw;
+		left:60.5vw;
+		width: 38vw;
+		height: 36vw;		
+	}
+
+	#p1, #p2, #p3{
+		position: relative;
+  		float: left;
+  		padding: 30px;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	a:link, a:visited, a:active{
+		text-decoration: none;
+		color:black;
+	}
+	a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+	.links:link, .links:hover{
+		text-decoration: underline;
+		color:blue;
+	}
+
+		
+</style>
+<img id="refresh_button" src="icons/refresh.png" onClick="window.location.reload();"></img>
+<a href="index.html"><img id="home_button" src="icons/home.png"></a>
+<h3>Visual Culture Seminar 2021 Fall</h3>
+<h1>Week 6-7  Mindy Seu</h1>
+<div class="pieces" id="div1"><div id="p1"></div></div>
+<div class="pieces" id="div2"><div id="p2"></div></div>
+<div class="pieces" id="div3"><a href="4-2.html"><div id="p3"></div></a></div>
+
+<script> 
+(function newFact1() {
+  var facts1 = 
+  ["<a href='https://vimeo.com/amtparsons/review/632031539/29469fae2a'>Mindy: So I did a fellowship at the Internet Archive, and my desk is right next to Nelsons, who lives in a hospital in Sausalito in the bay area,  and like 50 years later, they are still working on Xanadu, so what I learned is again that's recording for internal use only. They're unwilling to compromise on their vision, so they only want to work with people who will execute their idea of what they should look like. There don't believe in collaboration, so because of that, she's had various people build different versions of this tool, but they are unable to scale so that you can play with Xanadu on his computer at the Internet archive.</a>", 
+  "<a href='https://vimeo.com/amtparsons/review/632031539/29469fae2a'>Mindy: Still, I don't believe there's any other plug-in for it, but she is still convinced that to burners stole their ideas for links. But even this idea of stealing, I think, is,  do we have ownership of our framework like LinkedIn, like I believe that she didn't embrace the open-source model born in the web.</a>",
+  "<a href='https://vimeo.com/amtparsons/review/632031539/29469fae2a'>Luiza: Yeah, that's an excellent way to put the question around. I don't know, I think it also helps to kind of escape this kind of idea of a final solution or the right thing, you are not making it unless it's going to serve a purpose or be right and so to avoid that you're constantly making versions are escaping and categorization, which I like but I think that there's also an aspect of like performance to this, even like you giving a lecture in a website and then showing the inside of the website and like that came in crediting someone else and did that I don't know, there's like this idea like editing that is and that is sort of like you're seeing the cuts kind of, which is interesting. </a>", 
+  "<a href='https://vimeo.com/amtparsons/review/632031539/29469fae2a'>Mindy: Because I don't know if it's like a sort of defensiveness, really protectiveness to say like:' it's not done'. So it allows you to continue tweaking it, and I like tweaking over long periods. So that is interesting, and I would like to hear from the group. Does anyone else work on there or iterate on their projects publicly and show in-progress work?</a>"
+  ];
+
+  var randomFact1 = Math.floor(Math.random() * facts1.length);
+  document.getElementById('p1').innerHTML = facts1[randomFact1];
+})();
+
+(function newFact2() {
+  var facts2 = 
+  [ 
+  "<a class='links' href='https://walkerart.org/magazine/sharing-as-survival-mindy-seu-cyberfeminism-index'>Sharing as Survival: Mindy Seu on the Cyberfeminism Index, Marie Hoejlund (2020)</a>",
+  "<a class='links' href='https://cyberfeminismindex.com/'>Cyberfeminism Index</a>"
+ ];
+
+  var randomFact2 = Math.floor(Math.random() * facts2.length);
+  document.getElementById('p2').innerHTML = facts2[randomFact2];
+})();
+
+(function newFact3() {
+  var facts3 = 
+  [ "Maya: Mindy Sue’s work features a compilation of cyberfeminism projects and sources that live all in one document. The project took a year to complete and was open sourced. My immediate thought was “wow, that’s pretty cool”. To think so many people have contributed to this project and it’s a one stop shop for cyberfeminism. While the concept is incredible, the project is actually usable, let’s say if someone is writing a paper, which is even better. ",
+  "Antoinette: When conceiving the idea, Mindy mentioned that multiplicity is one of the concepts that she wants to emphasize. I think she has executed that perfectly — not just through the cacophony of all the voices from the openly invited contributors, but also in the manifold layers of meaning and meta-meanings and juxtapositions. Every part of the project, from the ideation to the coding and visual representation, was diligently thought out to make sense of all of it. ",
+  "Lena: I like that the Cyber-feminism Index website has the original language of Chinese and Korean articles. I’m unfamiliar with the Western feminism, but I can definitely relate to the Eastern feminist sites. The way how people react and respond to statements that exist online largely depends on the means of expression. I had been given the concept of Cyber-feminism beforehand, at the Index’s homepage, and this actually affected the way I see the individual sites. To be honest, many of the sites Mindy collected have poor visual design, suspicious looking which I would close immediately if I accidentally open. But her collecting the sites into a thoughtfully designed website made me willing to stay and read them.",
+  "Maud: The cyberfeminist Index is an amazing work of internet archeology. It’s interesting to read about the different online and worldwide feminist movements, and great to have an index to document it. I also wonder what websites that are made today will look like in twenty years, and what websites will survive. Although interesting that she lists accessibility as a tool to ensure the website lives on, while there is one obvious accessibility issue on the site in terms of color choice.", 
+  "Yiyao: I don't think that cyber and feminism are relative contradictions in terms. Maybe there are fewer women in technical engineering than men, but I don't think that means that technology and feminism are oxymorons. After reading the interview, I searched for articles about why women are underrepresented in technology and engineering, such as women's rights to education, employment, and political rights. The example Mindy Seu talked about in the interview, 'We get asked for references for designers and developers. They are great programmers, but there are also womn who are excellent developers too! But unfortunately they are not part of the same reference pool.' This example shows that technology and women are not in conflict but instead a series of power inequalities between women and technology.",
+  "Hannah: I had never heard of cyberfeminism before reading this interview. For me Cyberfeminism is a vague term. However, after browsing the Cyberfeminism Index, the Index is a place where old, lost, or marginalized content is combined with newer imagery. It's satisfying and nostalgic to see them live together. Also these images are scattered throughout the site, and they give people different entry points into the works on the site.The structure of the website was intentionally designed to accommodate the inevitable changes in browsers like Chrome and Firefox throughout the years. I like that they also used Arial, one of few system fonts designed by a woman.",
+  "Carla: This article gave me a lot of shock because of the term cyberfeminism. Mindy Seu is a designer at Harvard’s Graduate School of Design and researcher at metaLAB, focusing on public engagement with digital archives. She evokes a new definition of feminism. Information technology and machines have brought liberation like a great leap forward for women. Since entering the Internet age, public spaces for women have been formed on a large scale on the Internet. Traditional public spaces, if they are not properly designed and used, will also cause women to be sexually harassed, while virtual public spaces can well reduce the violence from men, allowing women to have more freedom in this space.",
+  "Austin: This interview with Mindy Seu along with the Cyberfeminism Index was really thought-provoking. A lot of the topics and ideas brought up during the interview really resonated with me and had me think about things I don’t usually consider. One of the quotes from Mindy Seu that really stood out to me was “The internet is not only a network of cables, servers, and computers. It is an environment that shapes and is shaped by its inhabitants.” The Cyberfeminism Index is such an interesting project and the way it is constantly updated with new entries makes it so unique."
+  ];
+
+  var randomFact3 = Math.floor(Math.random() * facts3.length);
+  document.getElementById('p3').innerHTML = facts3[randomFact3];
+})();
+
+</script>

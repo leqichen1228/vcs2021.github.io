@@ -1,0 +1,294 @@
+<head>
+<title>Week 1-2</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+	@font-face {
+    font-family: TitleFont;
+    src: url(AeonikProTRIAL-Regular.otf);
+	}
+	@font-face {
+    font-family: MyFont;
+    src: url(AeonikProTRIAL-Light.otf);
+	}
+
+	#refresh_button{
+		position: absolute;
+		right: 1.1vw;
+		top:4.6vw;
+		width: 2.2vw;
+		height: auto;
+	}
+	#home_button{
+		position: absolute;
+		right: 1vw;
+		top:1.5vw;
+		width: 2.6vw;
+		height: auto;
+	}
+	h3{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		top:0;
+		position: absolute;
+		line-height: 1vw;
+	}
+	h1{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		position: absolute;
+		top:2.5vw;
+	}
+	
+	img{
+		height: auto;
+		vertical-align: middle;
+		text-align: center;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.pieces{
+		border-width: 2px;
+		border-style: solid;
+		border-color: black;
+		position: absolute;
+		font-family: TitleFont;
+		font-size:1vw;
+		line-height: 1.3vw;
+		background-color: #ffffff;
+		display: inline-block;
+		text-align: left;
+		margin: auto;	
+		vertical-align: middle;	
+		justify-content: center;		
+	}	
+	
+	#div1{		
+		top:8vw;
+		left:0.5vw;
+		width: 20vw;
+		height: 12vw;
+	}
+		
+	#div2{		
+		top:20vw;
+		left:0.5vw;
+		width: 20vw;
+		height: 24vw;
+
+	}
+	#div3{		
+		top:8vw;
+		left:20.5vw;
+		width: 47.6vw;
+		height: 12vw;		
+	}
+	#div4{		
+		top:20vw;
+		left:20.5vw;
+		width: 18.2vw;
+		height: 14.6vw;	
+		line-height: 14.6vw;		
+	}
+	#div5{		
+		top:20vw;
+		left:38.7vw;
+		width: 29.4vw;
+		height: 14.6vw;	
+	}
+	#div6{		
+		top:34.6vw;
+		left:20.5vw;
+		width: 47.6vw;
+		height: 9.4vw;		
+	}
+	#div7{		
+		top:8vw;
+		left:68.2vw;
+		width: 30.3vw;
+		height: 26.6vw;		
+	}
+	#div8{		
+		top:34.6vw;
+		left:68.2vw;
+		width: 30.3vw;
+		height: 9.4vw;		
+	}
+
+	#p1, #p2, #p3, #p5, #p6, #p7, #p8{
+		position: relative;
+  		float: left;
+  		padding: 30px;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+	#p4{
+		position: relative;
+  		float: left;
+  		height:100%;
+  		width: auto;
+  		vertical-align: middle;
+  		padding: 0;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	a:link, a:visited, a:active{
+		text-decoration: none;
+		color:black;
+	}
+	a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+
+
+		
+</style>
+<img id="refresh_button" src="icons/refresh.png" onClick="window.location.reload();">
+<a href="index.html"><img id="home_button" src="icons/home.png"></a>
+<h3>Visual Culture Seminar 2021 Fall</h3>
+<h1>Week 1-2 - Jessica Helfand</h1>
+<div class="pieces" id="div1"><div id="p1"></div></div>
+<div class="pieces" id="div2"><div id="p2"></div></div>
+<div class="pieces" id="div3"><div id="p3"></div></div>
+<div class="pieces" id="div4"><a href='https://www.jessicahelfand.com/'><div id="p4"></div></a></div>
+<div class="pieces" id="div5"><div id="p5"></div></div>
+<div class="pieces" id="div6"><div id="p6"></div></div>
+<div class="pieces" id="div7"><div id="p7"></div></div>
+<div class="pieces" id="div8"><div id="p8"></div></div>
+<script> 
+(function newFact1() {
+  var facts1 = 
+  [
+  "Maria: How is the concept of digital ownership changing? What are your thoughts on NFTs?", 
+  "Hannah: What do you think about 'If there is to be gender equality, then both genders need to make a difference in feminism'?",
+  "Maria: What are the notions that the term cyberfeminism evoke? Have you experienced negative or positive responses to this term? ",
+  "Carla: How is gender different nowadays compared to early last century?", 
+  "Antoinette: How did you feel about the index when you first visited? What was your way in navigating the website?", 
+  "Maya: How does she handle the formatting? Is it MLA or Chicago? And why?",
+  "Claire: Do you think the listing of the cyber feminist projects is clear / easy to navigate?"
+  ];
+
+  var randomFact1 = Math.floor(Math.random() * facts1.length);
+  document.getElementById('p1').innerHTML = facts1[randomFact1];
+})();
+
+(function newFact2() {
+  var facts2 = 
+  ["Maud: As someone who just moved to a new country, ‘Surrendering’ resonated with me. Even though the author wrote that “feeling lost has it’s benefits” in relation to how we experienced the pandemic, I think there are many situations and experiences that this can be applied to.",
+  "Maud: In the text ‘Reciprocating’ I disagreed with one of the statements. The author talks about how ‘liking’ a tweet about someone who died is a “mechanical and misguided” urge of reciprocation. However the like button on twitter is a heart, and I think that clicking a heart as a reaction when reading that someone is dead is not necessarily as bad as presented in the text. ", 
+  "Maya: 'On Seeing': Blue is a color with many meanings and that countless artists have dedicated their time learning and creating with.I thought this essay was interesting. I never knew that so many people had studied just one color and that it had such a rich history. It makes me wonder what it really signifies.",
+  "Maya: 'Remembering': The author's husband died four days before Christmas and she recollects her raw feelings and observations of that day. Pretty sad read. You imagine her kind of pushing through the day like a zombie, making observations about the wine she drank as if it’s significant but it’s nothing compared to hours prior at the hospital. ",
+  "Yiyao: I have a question about seeing. For the meanings of colors, Is it related to the color itself, or is the meaning added based on the person's growth experience and cultural background?"
+  ];
+
+  var randomFact2 = Math.floor(Math.random() * facts2.length);
+  document.getElementById('p2').innerHTML = facts2[randomFact2];
+})();
+
+(function newFact3() {
+  var facts3 = 
+  [
+  "Maud: ‘Remembering’ hit pretty hard, and it was refreshing to hear a personal story from the author, she has clearly been through a lot. Anyone can relate to having visual memories and being reminded of a certain feeling or memory based on the season or weather.",
+  "Maya: 'Making': A child is dropped off at kindergarten, a student on a plane, and a daughter using materials from the holidays, are all creating something from scratch. I thought this story brought up a great point that I hadn’t really thought about in a while; what we make doesn’t always have to have a tangible purpose. It can be something as simple as getting through the day. ",
+  "Antoinette: Have you ever learned something about yourself that turns out to be helpful to your creative practice / related to a problem you’ve been having in your practices that you never realized?",
+  "Hannah: Do you think social media is the progress or retreat of communication? And do you think social media brings people closer or extends the distance?",
+  "Carla: In today's network-dominated society, most people are addicted to the network. The values of the network make people's thoughts tend to be unified gradually. In this case, the independence of thoughts is challenged. How to change this situation?"
+  ];
+
+  var randomFact3 = Math.floor(Math.random() * facts3.length);
+  document.getElementById('p3').innerHTML = facts3[randomFact3];
+})();
+
+
+var images = [
+"Jessica/1.jpeg", 
+"Jessica/2.jpeg", 
+"Jessica/3.png",
+"Jessica/5.jpeg", 
+"Jessica/7.jpeg", 
+"Jessica/8.jpeg", 
+"Jessica/9.jpeg",
+"Jessica/10.jpeg", 
+"Jessica/11.jpeg", 
+"Jessica/12.jpeg",
+"Jessica/13.jpg",
+"Jessica/14.jpg",
+"Jessica/16.jpg",
+"Jessica/17.jpg",
+"Jessica/18.jpg"
+];
+
+$('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#p4');
+
+
+(function newFact5() {
+  var facts5 = 
+  [
+  "Yiyao: There is something you cannot have. Is it necessary to look forward to a miracle and continue to pursue it?",
+  "Maud: Do you think that we will have a visual and emotional trigger for remembering the pandemic later?",
+  "Maya:What other colors have rich histories? If they have different meanings to everyone, is it all up to interpretation regarding symbolism? ",
+  "Antoinette: What does “self-reliance” mean to you? Do you think you will start practicing it after having read these essays?",
+  "Hannah: Does the social distance affect your life, personality or mental health during this pandemic ？",
+  "Carla: What life practices can help people develop a sense of independence?",
+  "Lena: How does dreams affect you to make decisions, or change your view on something?",
+  "Lena: What memories did you get back to the most last year during the pandemic?"
+  ];
+
+  var randomFact5 = Math.floor(Math.random() * facts5.length);
+  document.getElementById('p5').innerHTML = facts5[randomFact5];
+})();
+
+(function newFact6() {
+  var facts6 = 
+  [
+  "Maud: How do you feel reading the earliest texts over again now that it’s been a while since we were in lockdown?",
+  "Maya: Where is the line of making something that functions and one where the value lies within ourselves?",
+  "Austin: What are some ways designers can translate their everyday observations into their designs?",
+  "Austin: What other colors carry a wide range of meanings and how can we as designers use specific colors to our advantage?",
+  "Maria: Is it necessary for an artist/creator to have a defined style throughout all of their practices? ",
+  "Maria: Can there be too much introspection?",
+  "Claire: Why has walking such a great effect on the psyche?"
+  ];
+
+  var randomFact6 = Math.floor(Math.random() * facts6.length);
+  document.getElementById('p6').innerHTML = facts6[randomFact6];
+})();
+
+(function newFact7() {
+  var facts7 = 
+  [ "Claire: Breathing : I think it is remarkable that the author reminds you of the fact that breathing is nothing you should take for granted, especially during this pandemic. Especially during this pandemic, it is important not to act selfish, be there for each other and to help wherever you can. Emerson's quote sums it up: 'To know even one life has breathed easier because you have lived, this is to have succeeded.' Longing : I was able to empathize very well. I have often found myself in situations where I longed for something that wasn't available. This condition can be devastating - but also a catalyst to find ways to get it or find different things that can also be fulfilling. Walking : Super interesting that so many great thinkers, poets and philosophers were convinced that walking has such a big effect on the mind and thoughts. I myself can empathize with that and can totally understand the quote 'walking is like tourism for the psyche'.",
+  "Maria: Recalibrating, Feeling and Making add up to the crucial steps to creative healing. After not creating for a while it might feel abysmal to navigate that space again and have a defined practice. It is crucial to remember that, as Jessica Helfand stated, “you are not a slave of your own past” and it is productive to “dive deep” and come back with a new sense of self respect that will then become power. It is ok to reroute, recognize your vulnerability and just feel. “Give yourself to yourself” said Montaigne, an idea that should sound remotely foreign but yet most of the time it does and feels like a difficult task. Being able to feel more allows the acceptance of imperfection and fragility which are some of the most authentic sentiments. Being fearless and “diving deep” leads to making, which leads to purpose and then to hope. ",
+  "Austin: The three essays I read were “On Seeing”, “Observing” and “Storytelling”. I enjoyed reading “On Seeing” as I had never really thought about all the different meanings and representations the color blue could have. There were also so many great quotes from “Storytelling” that resonated with me, such as: “Our minds travel when our bodies are forced to stay at home” and “we also tell ourselves stories to make sense of the world.” The essays beautifully capture the ideas of Ralph Waldo Emerson and reframe them to describe what it means to be a maker during a pandemic. I’m also a fan of the visual design of the physical book!",
+  "Lena: The author is honest with her emotions. She seems to let everything in and this understanding of herself makes her calm and strong. I read Remembering, Dreaming and Observing. I chose Remembering first with no hesitation. I have been obsessed with memories since last year. I felt the same when she said“a sunny and cold football day is, even now, a laceration to the senses”. A time in the year, a particular weather can suddenly bring some memories back for me. Every time it happens, it reminds me of who I was before, even though that person seems to be a stranger. Yet it was still me. I used to selectively forget things that made me sad or ashamed, so that I could move on with no burden. Now I just wish I could remember them all, because I want to understand what made me who I am now. In fact, understanding myself has been much harder than interacting with the surroundings. When I put myself in social situations I pay less attention to myself than others. But dreams allow me to be egoistic.", 
+  "Carla: Independence means not only that you can accomplish something alone but also the independence of thought. Independent thought comes from the accumulation of life practice, including feeling, observation, learning, etc. The accumulation of different projects constitutes a person's unique thought. Man is an animal living in a group society. No one can be completely isolated from society, which means that the outside world's influence on people's ideological independence is very important. An important aspect of ideological independence is not to drift with the tide. Combine your life practice with your thoughts to become an independent person. ",
+  "Hannah: After reading the three short essays: Looking, Reflecting, and Distancing, I thought that they are generally intriguing, particularly Distancing. The word distance has various implications in various periods and spots. She composed that “Social distance, however, is not as easily maneuvered, and can just as easily distort truth. (One sees qualities at a distance, wrote Victor Hugo, and defects at close range.)” Because of the current pandemic, everyone needs to maintain social distance. Students take online classes, and people work from home. They can't meet their loved ones. I haven’t seen my family and friends in China for almost two years，however, as she wrote, technology in general served to socially distance us long before quarantine ever did. Individuals discover alternate approaches to impart, interface and express. I feel that the distance doesn't make any difference as long as we actually care. ",
+  "Antoinette: Reading these short essays felt weirdly like going through an old journal, reliving thoughts and feelings that were once so potent. Jessica Helfand eloquently captures the many emotions during early lockdown, and cleverly converts this global crisis into an opportunity for personal reflection as well as to spread her philosophy as inspired by Ralph Waldo Emerson. Her meditations on “Looking”, on “Harvesting”, “On Learning” and more not only demonstrate her diligent practice and her deep belief in the importance of self-reliance, they also manifest her insights in how personal growth and well-being is vital to any creative who wishes to continue bettering their work and furthering their potential.",
+  "Yiyao: The three essays I selected to read are on seeing, burning, and longing. My favorite one is burning, as it lets me realize a fact I had never noticed before. The author said, 'many artists and designers have an uneasy relationship with words in general.'' Then, she explains why I would have this reaction because I seemed myself as a visual person, which is strictly true, and I totally agree with her. For longing, my favorite part is 'Wanting what is not possible—no matter how you define your object of desire—is a recipe for disappointment.' Since I have the same feeling with my experience, I state that if there is anything you want, but you cannot get it, forget it. Our efforts will only make us less reconciled, which makes us sadder."
+  ];
+
+  var randomFact7 = Math.floor(Math.random() * facts7.length);
+  document.getElementById('p7').innerHTML = facts7[randomFact7];
+})();
+
+(function newFact8() {
+  var facts8 = 
+  [
+  "Maria: What are some ways in which artists/creators can let go of fear? ",
+  "Maria: Can there be too much introspection?",
+  "Claire: Why has walking such a great effect on the psyche?",
+  "Claire: How could I (also as a designer) help people who have been severely affected by the effects of the pandemic?",
+  "Maya: Where is the line of making something that functions and one where the value lies within ourselves?",
+  "Austin: What are some ways designers can translate their everyday observations into their designs?",
+  "Maud: How do you feel reading the earliest texts over again now that it’s been a while since we were in lockdown?"
+  ];
+
+  var randomFact8 = Math.floor(Math.random() * facts8.length);
+  document.getElementById('p8').innerHTML = facts8[randomFact8];
+})();
+
+</script>

@@ -1,0 +1,290 @@
+<head>
+<title>Pieces</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+	@font-face {
+    font-family: TitleFont;
+    src: url(AeonikProTRIAL-Regular.otf);
+	}
+	@font-face {
+    font-family: MyFont;
+    src: url(AeonikProTRIAL-Light.otf);
+	}
+
+	#refresh_button{
+		position: absolute;
+		right: 1.1vw;
+		top:4.6vw;
+		width: 2.2vw;
+		height: auto;
+	}
+	#home_button{
+		position: absolute;
+		right: 1vw;
+		top:1.5vw;
+		width: 2.6vw;
+		height: auto;
+	}
+	h3{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		top:0;
+		position: absolute;
+		line-height: 1vw;
+	}
+	h1{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		position: absolute;
+		top:2.5vw;
+	}
+	img{
+		height: auto;
+		vertical-align: middle;
+		text-align: : middle;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.pieces{
+		border-width: 2px;
+		border-style: solid;
+		border-color: black;
+		position: absolute;
+		font-family: TitleFont;
+		font-size:1vw;
+		width: 24.5vw;
+		height: 18.1vw;
+		line-height: 1.2vw;
+		background-color: #ffffff;
+		display: inline-block;
+		text-align: left;
+		margin: auto;	
+		vertical-align: middle;	
+		justify-content: center;
+	}
+
+	#div1{		
+		top:8vw;
+		left:0.5vw;				
+	}
+
+	#div2{		
+		top:8vw;
+		left:25vw;	
+	}
+	#div3{		
+		top:8vw;
+		left:49.5vw;	
+	}
+	#div4{		
+		top:8vw;
+		left:74vw;		
+	}	
+	#div5{		
+		top:26.1vw;
+		left:0.5vw;		
+	}
+	#div6{		
+		top:26.1vw;
+		left:25vw;	
+	}
+	#div7{		
+		top:26.1vw;
+		left:49.5vw;	
+	}
+	#div8{		
+		top:26.1vw;
+		left:74vw;		
+	}
+
+	#p1, #p3, #p4, #p6, #p7{
+		position: relative;
+  		float: left;
+  		padding: 30px;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);;
+  		vertical-align: middle;
+	}
+
+	#p2, #p5, #p8{
+		position: relative;
+  		float: left;
+  		width: auto;
+  		vertical-align: middle;
+  		padding: 0;
+		text-align: center;
+		max-height: 100%;
+		max-width: 100%;
+		overflow: hidden;
+	}
+
+	a:link, a:visited, a:active{
+		text-decoration: none;
+		color:black;
+	}
+	a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+		
+</style>
+<img id="refresh_button" src="icons/refresh.png" onClick="window.location.reload();">
+<img id="home_button" src="icons/home.png">
+<h3>Visual Culture Seminar 2021 Fall</h3>
+<h1>Section B</h1>
+<div class="pieces" id="div1"><a href="1-1.html"><div id="p1"></div></a></div>
+<div class="pieces" id="div2"><a href="2-1.html"><div id="p2"></div></a></div>
+<div class="pieces" id="div3"><a href="3-1.html"><div id="p3"></div></a></div>
+<div class="pieces" id="div4"><a href="4-1.html"><div id="p4"></div></a></div>
+<div class="pieces" id="div5"><a href="5-1.html"><div id="p5"></div></a></div>
+<div class="pieces" id="div6"><a href="6-1.html"><div id="p6"></div></a></div>
+<div class="pieces" id="div7"><a href="7-1.html"><div id="p7"></div></a></div>
+<div class="pieces" id="div8"><a href="8-1.html"><div id="p8"></div></a></div>
+
+<script> 
+(function newFact1() {
+  var facts1 = 
+  [
+  "Maud: As someone who just moved to a new country, ‘Surrendering’ resonated with me. Even though the author wrote that “feeling lost has it’s benefits” in relation to how we experienced the pandemic, I think there are many situations and experiences that this can be applied to.",
+  "Antoinette: Have you ever learned something about yourself that turns out to be helpful to your creative practice / related to a problem you’ve been having in your practices that you never realized?",
+  "Hannah: Do you think social media is the progress or retreat of communication? And do you think social media brings people closer or extends the distance?",
+  "Carla: In today's network-dominated society, most people are addicted to the network. The values of the network make people's thoughts tend to be unified gradually. In this case, the independence of thoughts is challenged. How to change this situation?",
+  "Maya: 'Remembering': The author's husband died four days before Christmas and she recollects her raw feelings and observations of that day. Pretty sad read. You imagine her kind of pushing through the day like a zombie, making observations about the wine she drank as if it’s significant but it’s nothing compared to hours prior at the hospital. ",
+  "Yiyao: I have a question about seeing. For the meanings of colors, Is it related to the color itself, or is the meaning added based on the person's growth experience and cultural background?",
+  "Austin: What other colors carry a wide range of meanings and how can we as designers use specific colors to our advantage?",
+  "Jessica: I would inject the word “daily” before the word “practice”…Eating; working out; spiritual practice…something about yourself that has to do with your creative mind.",
+  "Jessica: It’s always the face. There’s something on the face…an interesting definition of graphic design I’ve ever heard was that if you could simultaneously address, that which is universal…you will get somewhere."
+  ];
+
+  var randomFact1 = Math.floor(Math.random() * facts1.length);
+  document.getElementById('p1').innerHTML = facts1[randomFact1];
+})();
+
+
+var images2 = 
+[
+"Clara/1.jpg", 
+"Clara/2.jpg", 
+"Clara/3.jpg",
+"Clara/4.jpg", 
+"Clara/5.jpg", 
+"Clara/6.jpg",
+"Clara/7.jpg", 
+"Clara/8.jpg", 
+"Clara/9.jpg",
+"Clara/10.jpg", 
+"Clara/11.jpg", 
+"Clara/12.jpg"
+];
+$('<img class="fade-in" src="' + images2[Math.floor(Math.random() * images2.length)] + '">').appendTo('#p2');
+
+(function newFact3() {
+  var facts3 = 
+  [
+  "Lucille: We had 12 more weeks to make something, and this was our thesis kind. This is our pieces; in a way, I felt like we were prepared and not prepared because we thought, OK, we're going to be launched into the world now in a few months. I'm going to graduate with an MFA in design. I'm going to get a job, but why is this project be given to me at this time in my life? You know when I have to go out the streets what is that about. So for the remaining 10 to 12 weeks, I thought, Lucille, if you go there at night, what are you going to notice. If you go there in the day, what are you going to see? ", 
+  "Lucille: Still, it's outside of Detroit on Woodward Avenue, which is the main thorough for it that goes out of Detroit to the suburbs where Cranbrook is worse. So just those of vantage point across the street, I across the store which is very close and then in the middle of the road highway that gives you different vantage point also looking in your left and right and I think that's what's missing. Luiza, you're asking me how one does generate sketchers, iterations if you're only on one screen because that is the mediator of your design.",
+  "Lucille: You don't stand up. I'm not standing up looking sideways; I can't, so do I go in the back? I can you know because I only have one screen. Hence, I feel that might I have to tell my students and you know I'm not going back you know I'm not going to let you go back to the past right because at the time, 40 years ago we didn't have a computer, so that's all we did.",
+  "Lucille: And now that's happening on me and the laptop. I'm like, oh, I'm moving it from one area. Wait a minute, let me stop right there that I like that how did that happen you know, you know there was an accident it's not an accident if you if you're welcome the accident, then you are onto something that is like taking risks.",
+  "Carla: The movie consists of 13 different characters, and each of them delivers a great manifesto. And I think this movie makes me think outside the categories of narrative cinema and think outside the star as an art material. As Blanchett changes herself vocally and facially in this file, a structure makes the film feel more coherent.", 
+  "Yiyao: After watching the film, what impressed me most was the photography. Because I like symmetrical composition, many scenes in this film are shot in this way, and I think this is part of the reason why I insisted on watching it.",
+  "Antoinette: I also appreciate that the visual representation of these manifestos (which are mostly written by men) are portrayed by a female lead; and on top of that, Cate Blanchett’s virtuosity added such magic to the entire experience.",
+  "Hannah: Do you think it is effective for the audience to listen to the lecture without any textual assistance?",
+  "Maud: What would the people that wrote these manifestos say if they saw the movie?"
+
+  ];
+
+  var randomFact3 = Math.floor(Math.random() * facts3.length);
+  document.getElementById('p3').innerHTML = facts3[randomFact3];
+})();
+
+
+(function newFact4() {
+  var facts4 = 
+  [
+  "Mindy: So I did a fellowship at the Internet Archive, and my desk is right next to Nelsons, who lives in a hospital in Sausalito in the bay area,  and like 50 years later, they are still working on Xanadu, so what I learned is again that's recording for internal use only. ", 
+  "Mindy: They're unwilling to compromise on their vision, so they only want to work with people who will execute their idea of what they should look like. There don't believe in collaboration, so because of that, she's had various people build different versions of this tool, but they are unable to scale so that you can play with Xanadu on his computer at the Internet archive.",
+  "Mindy: Still, I don't believe there's any other plug-in for it, but she is still convinced that to burners stole their ideas for links. But even this idea of stealing, I think, is,  do we have ownership of our framework like LinkedIn, like I believe that she didn't embrace the open-source model born in the web.",
+  "Mindy: Because I don't know if it's like a sort of defensiveness, really protectiveness to say like:' it's not done'. So it allows you to continue tweaking it, and I like tweaking over long periods. So that is interesting, and I would like to hear from the group. Does anyone else work on there or iterate on their projects publicly and show in-progress work?",
+  "Lena: As the site is work-in-progress, do you think Mindy should open its access for the public to contribute to her collection? Why?",
+  "Maud: Will we be forced to go back to a life offline at some point because of web environmentalism?",
+  "Yiyao: I think the people who will visit this website and the related content are those who care about and agree with gender equality. However, it's another group of people who are causing the inequality of women's rights. So how do we get those people to see and care about this content?",
+  "Hannah: Feminism has been a hot topic in recent years. And the development of feminism in China can be described as positive and then negative. Feminism, which was once politically correct in everyone's eyes, is now subject to a lot of criticism on the Internet, and many people criticize it verbally. Why has feminism in China become like this in the process of development?"
+
+  ];
+
+  var randomFact4 = Math.floor(Math.random() * facts4.length);
+  document.getElementById('p4').innerHTML = facts4[randomFact4];
+})();
+
+
+(function newFact5() {
+  var facts5 = 
+  [
+  "<img src='Luiza/1.jpg'>", 
+  "<img src='Luiza/2.jpg'>", 
+  "<img src='Luiza/3.jpg'>", 
+  "<img src='Luiza/4.jpg'>", 
+  "<img src='Luiza/5.jpg'>", 
+  "<img src='Luiza/6.jpg'>", 
+  "<img src='Luiza/7.jpg'>", 
+  "<img src='Luiza/11.jpg'>", 
+  "<img src='Luiza/9.jpg'>", 
+  "<img src='Luiza/10.jpg'>"
+  ];
+
+  var randomFact5 = Math.floor(Math.random() * facts5.length);
+  document.getElementById('p5').innerHTML = facts5[randomFact5];
+})();
+
+
+(function newFact6() {
+  var facts6 = 
+  [
+  "Maya: I have never heard of queer typography until reading this. I didn’t think of typography as something that has political characteristics.  or characteristics to represent a marginalized population. But type design is a business of making and selling fonts -- is a type of commerce and therefore has political implications. ",
+  "Maria: In the essay, Soulellis mentions that he wants to keep the definition of queer typography poetic, allowing it to continue loosely. Can there be negative repercussions to the vagueness of the term? ",
+  "Austin: Going into this week’s reading, I knew nothing about queer typography and nothing of Paul Soulellis’ work. After familiarizing myself with his work, I was particularly drawn to the importance of typefaces and how fonts “frequently uphold and support imperial power” as he references the recent CIA rebrand. I also found it interesting how expansive the idea of queerness is and just how difficult it is to define it. ",
+  "Lena: It’s interesting to me that the fonts that Nat Pyper collected were not created to become typefaces. They were just design elements used on queer publications. I never thought about making typefaces(putting together letters) as a way to remember certain people and the acts they did. Typefaces are timeless, and indeed a great way 'to radically disseminate histories, to reference queer acts'.",
+  "Claire: I’ve read the text on the laptop and also on the phone. I think he designed the desktop version pretty „playful“ and it seems like he didn’t follow any „standart design rules“. It looks different and I like it. But I also think the design makes it a little less  legible. The mobile version was designed very simple - which made it easier for me to read and focus on the text. How do you feel about the desktop version / the design?",
+  "Carla: Information technology and machines have brought liberation like a great leap forward for women. Since entering the Internet age, public spaces for women have been formed on a large scale on the Internet. Traditional public spaces, if they are not properly designed and used, will also cause women to be sexually harassed, while virtual public spaces can well reduce the violence from men, allowing women to have more freedom in this space.",
+  "Antoinette: Has your understanding of “queerness” changed before and after the reading, and how so? What do you think about the referenced projects in the reading? Do they exemplify what “queer type” is?"
+  ];
+
+  var randomFact6 = Math.floor(Math.random() * facts6.length);
+  document.getElementById('p6').innerHTML = facts6[randomFact6];
+})();
+
+
+(function newFact7() {
+  var facts7 = 
+  [
+   "Maya: There are so many videos and examples here. How long did it take him to compile all this information? How did he choose what was worth showcasing in videos vs not. ",
+  "Austin: With the internet being what’s essentially an empty canvas open to endless possibilities, should we still be sticking to the “web’s grain”? Most websites seem to follow the conventional top-down content layout, left to right reading experience. Is this only because it’s what we are used to seeing and therefore more legible or accessible to the masses?",
+  "Yiyao: Do you think Laurel Schwulst's metaphors are accurate and do they differ in any way?",
+  "Antoinette: Do you have a personal website? How do you feel about it at the beginning vs now?",
+  "Austin: Why aren’t we seeing more experimental websites with interesting animations or interactions? Is it because designers are lazy? Is it because this way of designing is what we have always been taught?",
+  "Maria: Is there a way to take a step back from the role technology plays in our daily lives? Many seem to be uncomfortable with the role technology has in their lives but what can really be done about it?",
+  "Carla: How would artists cope with the change of technology?"
+  ];
+
+  var randomFact7 = Math.floor(Math.random() * facts7.length);
+  document.getElementById('p7').innerHTML = facts7[randomFact7];
+})();
+
+
+(function newFact8() {
+  var facts8 = 
+  [
+  "<img src='Lynn/1.jpg'>", 
+  "<img src='Lynn/3.jpg'>", 
+  "<img src='Lynn/4.jpg'>", 
+  "<img src='Lynn/5.jpg'>", 
+  ];
+
+  var randomFact8 = Math.floor(Math.random() * facts8.length);
+  document.getElementById('p8').innerHTML = facts8[randomFact8];
+})();
+
+</script>

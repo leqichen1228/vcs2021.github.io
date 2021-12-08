@@ -1,0 +1,283 @@
+<head>
+<title>Week 4-5</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+	@font-face {
+    font-family: TitleFont;
+    src: url(AeonikProTRIAL-Regular.otf);
+	}
+	@font-face {
+    font-family: MyFont;
+    src: url(AeonikProTRIAL-Light.otf);
+	}
+
+	#refresh_button{
+		position: absolute;
+		right: 1.1vw;
+		top:4.6vw;
+		width: 2.2vw;
+		height: auto;
+	}
+	#home_button{
+		position: absolute;
+		right: 1vw;
+		top:1.5vw;
+		width: 2.6vw;
+		height: auto;
+	}
+	h3{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		top:0;
+		position: absolute;
+		line-height: 1vw;
+	}
+	h1{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		position: absolute;
+		top:2.5vw;
+	}
+	img{
+		height: auto;
+		vertical-align: middle;
+		text-align: center;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.pieces{
+		border-width: 2px;
+		border-style: solid;
+		border-color: black;
+		position: absolute;
+		font-family: TitleFont;
+		font-size:1vw;
+		line-height: 1.3vw;
+		background-color: #ffffff;
+		display: inline-block;
+		text-align: left;
+		margin: auto;	
+		vertical-align: middle;	
+		justify-content: center;		
+	}	
+	
+	#div1{		
+		top:8vw;
+		left:0.5vw;
+		width: 20vw;
+		height: 12vw;
+	}
+		
+	#div2{		
+		top:20vw;
+		left:0.5vw;
+		width: 20vw;
+		height: 24vw;
+
+	}
+	#div3{		
+		top:8vw;
+		left:20.5vw;
+		width: 47.6vw;
+		height: 12vw;		
+	}
+	#div4{		
+		top:20vw;
+		left:20.5vw;
+		width: 18.2vw;
+		height: 14.6vw;	
+		line-height: 14.6vw;		
+	}
+	#div5{		
+		top:20vw;
+		left:38.7vw;
+		width: 29.4vw;
+		height: 14.6vw;	
+	}
+	#div6{		
+		top:34.6vw;
+		left:20.5vw;
+		width: 47.6vw;
+		height: 9.4vw;		
+	}
+	#div7{		
+		top:8vw;
+		left:68.2vw;
+		width: 30.3vw;
+		height: 26.6vw;		
+	}
+	#div8{		
+		top:34.6vw;
+		left:68.2vw;
+		width: 30.3vw;
+		height: 9.4vw;		
+	}
+
+	#p1, #p2, #p3, #p5, #p6, #p7, #p8{
+		position: relative;
+  		float: left;
+  		padding: 30px;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+	#p4{
+		position: relative;
+  		float: left;
+  		height:100%;
+  		width: auto;
+  		vertical-align: middle;
+  		padding: 0;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	a:link, a:visited, a:active{
+		text-decoration: none;
+		color:black;
+	}
+	a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+
+
+		
+</style>
+<img id="refresh_button" src="icons/refresh.png" onClick="window.location.reload();">
+<a href="index.html"><img id="home_button" src="icons/home.png"></a>
+<h3>Visual Culture Seminar 2021 Fall</h3>
+<h1>Week 4-5  Lucille Tenazas</h1>
+<div class="pieces" id="div1"><div id="p1"></div></div>
+<div class="pieces" id="div2"><div id="p2"></div></div>
+<div class="pieces" id="div3"><div id="p3"></div></div>
+<div class="pieces" id="div4"><a href="https://tenazasdesign.com/"><div id="p4"></div></a></div>
+<div class="pieces" id="div5"><div id="p5"></div></div>
+<div class="pieces" id="div6"><div id="p6"></div></div>
+<div class="pieces" id="div7"><div id="p7"></div></div>
+<div class="pieces" id="div8"><div id="p8"></div></div>
+<script> 
+(function newFact1() {
+  var facts1 = 
+  [
+  "Maud: How much does context matter for a manifesto?", 
+  "Maud: What would the people that wrote these manifestos say if they saw the movie?",
+  "Lena: Which character do you think is most successful in terms of how strong and persuasive the manifesto is? Why?",
+  "Carla: Blanchett takes on a new role reciting excerpts from manifestos of different movements. What do you think this expression conveys?",
+  "Carla: There's not a moment-by-moment coherence in this movie; what's the point of doing this mash-up?",
+  "Maya: Manifesto is a film that pays homage to artists with a variety of different backgrounds who wrote manifestos. Cate Blancett plays 13 different characters in the film reenacting the manifestos. The film itself is nonlinear."
+  ];
+
+  var randomFact1 = Math.floor(Math.random() * facts1.length);
+  document.getElementById('p1').innerHTML = facts1[randomFact1];
+})();
+
+(function newFact2() {
+  var facts2 = 
+  ["Lucille: And now that's happening on me and the laptop. I'm like, oh, I'm moving it from one area. Wait a minute, let me stop right there that I like that how did that happen you know, you know there was an accident it's not an accident if you if you're welcome the accident, then you are onto something that is like taking risks.",
+  "Luiza: I want to ask about the importance of iterations and sketches, and with the first project, you know as sort of a requirement of the project is so long you had so many iterations that kind of showed you the way into something at the end that maybe you couldn't even have predicted so what's the importance for you in your practice of sketching and thinking through making?", 
+  "Carla: The movie consists of 13 different characters, and each of them delivers a great manifesto. And I think this movie makes me think outside the categories of narrative cinema and think outside the star as an art material. As Blanchett changes herself vocally and facially in this file, a structure makes the film feel more coherent.", 
+  "Yiyao: After watching the film, what impressed me most was the photography. Because I like symmetrical composition, many scenes in this film are shot in this way, and I think this is part of the reason why I insisted on watching it.",
+  "Antoinette: I also appreciate that the visual representation of these manifestos (which are mostly written by men) are portrayed by a female lead; and on top of that, Cate Blanchett’s virtuosity added such magic to the entire experience.",
+  "Antoinette: I particularly enjoyed the scene of the 5th grade teacher explaining as a class lecture how to be authentic by stealing, that nothing is original. It not only completely contradicts what we would imagine teachers to tell 10/11yos, it’s also as if Rosefeldt is saying most people don’t understand film and creativity and they need to be taught like little kids."
+  ];
+
+  var randomFact2 = Math.floor(Math.random() * facts2.length);
+  document.getElementById('p2').innerHTML = facts2[randomFact2];
+})();
+
+(function newFact3() {
+  var facts3 = 
+  ["Maria: I thought the credits at the beginning of the movie were spectacular, super bold, also the ending with all the characters and the quote.",
+  "Yiyao: Does the present format of the manifesto affect the content?", 
+  "Antoinette: Did you have a favorite scene or moment?", 
+  "Maud: How much does context matter for a manifesto?",
+  "Maud: What would the people that wrote these manifestos say if they saw the movie?",
+  "Austin: Do certain mediums create a more impactful manifesto?",
+  "Austin: Do you think manifestos are outdated/obsolete? "
+  ];
+
+  var randomFact3 = Math.floor(Math.random() * facts3.length);
+  document.getElementById('p3').innerHTML = facts3[randomFact3];
+})();
+
+
+var images = [
+"Lucille/1.jpg", 
+"Lucille/2.jpg", 
+"Lucille/3.jpg",
+"Lucille/4.jpg", 
+"Lucille/5.jpg", 
+"Lucille/6.jpg",
+"Lucille/7.jpg", 
+"Lucille/8.jpg", 
+"Lucille/9.jpg",
+"Lucille/10.jpg", 
+"Lucille/11.jpg", 
+"Lucille/12.jpg"
+];
+
+$('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#p4');
+
+
+(function newFact5() {
+  var facts5 = 
+  ["Maya: Do you think the characters chosen to speak each manifesto connect with the manifesto itself? ", 
+  "Maya: Why do you think they chose those manifestos? How did they assist each other in the making of the film? ", 
+  "Yiyao: Does the present format of the manifesto affect the content?",
+  "Hannah: Do you think it is effective for the audience to listen to the lecture without any textual assistance?",
+  "Antoinette: Manifesto started off as a 13-channel film art installation. Which version would you like better / think would work better?",
+  "Maud: What would the people that wrote these manifestos say if they saw the movie?",
+  "Austin: What were your thoughts on the character/setting being paired with the manifestos they read?", 
+  "Maria: Most of these manifestos were written by men and now were enacted by a women.",
+  ];
+
+  var randomFact5 = Math.floor(Math.random() * facts5.length);
+  document.getElementById('p5').innerHTML = facts5[randomFact5];
+})();
+
+(function newFact6() {
+  var facts6 = 
+  [
+  "Yiyao: Does the present format of the manifesto affect the content?", 
+  "Antoinette: Did you have a favorite scene or moment?", 
+  "Maud: How much does context matter for a manifesto?",
+  "Maud: What would the people that wrote these manifestos say if they saw the movie?",
+  "Austin: Do certain mediums create a more impactful manifesto?",
+  "Austin: Do you think manifestos are outdated/obsolete? "
+  ];
+
+  var randomFact6 = Math.floor(Math.random() * facts6.length);
+  document.getElementById('p6').innerHTML = facts6[randomFact6];
+})();
+
+(function newFact7() {
+  var facts7 = 
+  ["Antoinette: The opening of the movie sets a great tone of what this movie is about: the first manifesto stating that 'I do not explain because I hate common sense. I am writing a manifesto because I have nothing to say'. Julian Rosefeldt created this movie as his own manifesto, having nothing to say but to express his ideology visually and conceptually. The careful selection of manifestos all revolve around the main theme of art and authenticity. “We seek truth, not in the reality of appearances, but in the reality of thought. We must create.” This was especially interesting since Cate Blanchett skillfully delivers her out-of-context lines so strongly in character. The movie begins and ends with the same persona: a homeless person with a touch of madness saying “To those who don't understand us properly, we say with an irreducible scorn, we of whom you believe yourself to be the judges, will one day judge you”, echoing the first manifesto at the beginning of the movie.", 
+  "Yiyao: After watching the film, I wasn't too impressed, probably because I didn't fully understand the director's ideas. I only remember that some manifestoes resonated with me during the watching process, so I went back and looked for those ideas. I think the one I identified with most was the manifesto during the theater performance. 'The more we know, the less we understand, the better it is. I welcome whatever happens next.'A rtwork is often a reflection of the social, economic, political, and many other aspects of the time in which it was created. When we look at artworks from different countries and regions, we can feel the difference, as if we were experiencing a different life. The difference in technology and cultural background makes the artists have many other methods and ways of creation. ", 
+  "Hannah: I'm not familiar with the director, but Cate Blanchett's acting can truly be described as one person holding a film together. She plays 13 roles in the film alone, pointing to 13 artistic genres of the 20th century. In different roles, her makeup, tone of voice, intonation, accent and temperament are all very different. As I watched, I wrote the words for these feelings based on the scene.Cold, anger, power, complex, dream, young, hope and etc.While watching, I felt that such a full screen expression, really tested the level of the actress. Besides, I think not everyone is suitable for the film, including myself. I really can't evaluate this collection very well with my art accumulation.",
+  "Lena: Manifesto is made for those who are keen on exploring the philosophy of art and creation. For people who don’t belong to this group, like me, it was hard to follow. I saw fragments of different characters played by the same person positioned in different scenes. Through these distinctive personas, I feel that she wants to deliver some message, but many words are too poetic to be convincing. I think it would be easier to understand if the fragmented pieces could be connected in some way. But there are still some impressive scenes. The one that Cate talks to Cate in the news was quite intriguing to me. In the form of conversation, one talking to herself, I feel like her argument was strengthened. It also has a sense of humor to talk about such an abstract idea of “conceptual art” in the rain, which was faked though."
+  ];
+
+  var randomFact7 = Math.floor(Math.random() * facts7.length);
+  document.getElementById('p7').innerHTML = facts7[randomFact7];
+})();
+
+(function newFact8() {
+  var facts8 = 
+  [
+  "Claire: What was the intention to have one actress play all characters?", 
+  "Claire: Is the implementation in a movie more „meaningful“ than just in text form?", 
+  "Claire: Which manifesto did you like the most? Could you identify with one?",
+  "Maud: What would a manifesto sound like if it was written to be performed orally, or written for the purpose of communicating the message to “normal” people?", 
+  "Lena: Do you agree with “Nothing is original; you can steal from anywhere” in the classroom scene? Why?",
+  ];
+
+  var randomFact8 = Math.floor(Math.random() * facts8.length);
+  document.getElementById('p8').innerHTML = facts8[randomFact8];
+})();
+
+</script>

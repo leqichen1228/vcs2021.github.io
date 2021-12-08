@@ -1,0 +1,289 @@
+<head>
+<title>Week 11-13</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+	@font-face {
+    font-family: TitleFont;
+    src: url(AeonikProTRIAL-Regular.otf);
+	}
+	@font-face {
+    font-family: MyFont;
+    src: url(AeonikProTRIAL-Light.otf);
+	}
+
+	#refresh_button{
+		position: absolute;
+		right: 1.1vw;
+		top:4.6vw;
+		width: 2.2vw;
+		height: auto;
+	}
+	#home_button{
+		position: absolute;
+		right: 1vw;
+		top:1.5vw;
+		width: 2.6vw;
+		height: auto;
+	}
+	h3{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		top:0;
+		position: absolute;
+		line-height: 1vw;
+	}
+	h1{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		position: absolute;
+		top:2.5vw;
+	}
+	img{
+		height: auto;
+		vertical-align: middle;
+		text-align: center;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.pieces{
+		border-width: 2px;
+		border-style: solid;
+		border-color: black;
+		position: absolute;
+		font-family: TitleFont;
+		font-size:1vw;
+		line-height: 1.3vw;
+		background-color: #ffffff;
+		display: inline-block;
+		text-align: left;
+		margin: auto;	
+		vertical-align: middle;	
+		justify-content: center;		
+	}	
+	
+	#div1{		
+		top:8vw;
+		left:0.5vw;
+		width: 20vw;
+		height: 12vw;
+	}
+		
+	#div2{		
+		top:20vw;
+		left:0.5vw;
+		width: 20vw;
+		height: 24vw;
+
+	}
+	#div3{		
+		top:8vw;
+		left:20.5vw;
+		width: 47.6vw;
+		height: 12vw;		
+	}
+	#div4{		
+		top:20vw;
+		left:20.5vw;
+		width: 18.2vw;
+		height: 14.6vw;	
+		line-height: 14.6vw;		
+	}
+	#div5{		
+		top:20vw;
+		left:38.7vw;
+		width: 29.4vw;
+		height: 14.6vw;	
+	}
+	#div6{		
+		top:34.6vw;
+		left:20.5vw;
+		width: 47.6vw;
+		height: 9.4vw;		
+	}
+	#div7{		
+		top:8vw;
+		left:68.2vw;
+		width: 30.3vw;
+		height: 26.6vw;		
+	}
+	#div8{		
+		top:34.6vw;
+		left:68.2vw;
+		width: 30.3vw;
+		height: 9.4vw;		
+	}
+
+	#p1, #p2, #p3, #p5, #p6, #p7, #p8{
+		position: relative;
+  		float: left;
+  		padding: 30px;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+	#p4{
+		position: relative;
+  		float: left;
+  		height:100%;
+  		width: auto;
+  		vertical-align: middle;
+  		padding: 0;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	a:link, a:visited, a:active{
+		text-decoration: none;
+		color:black;
+	}
+	a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+
+
+		
+</style>
+<img id="refresh_button" src="icons/refresh.png" onClick="window.location.reload();">
+<a href="index.html"><img id="home_button" src="icons/home.png"></a>
+<h3>Visual Culture Seminar 2021 Fall</h3>
+<h1>Week 11-13 - Anthony Dunne, Fiona Raby, Lynn</h1>
+<div class="pieces" id="div1"><div id="p1"></div></div>
+<div class="pieces" id="div2"><div id="p2"></div></div>
+<div class="pieces" id="div3"><div id="p3"></div></div>
+<div class="pieces" id="div4"><a ref='http://dunneandraby.co.uk/'><div id="p4"></div></a></div>
+<div class="pieces" id="div5"><div id="p5"></div></div>
+<div class="pieces" id="div6"><div id="p6"></div></div>
+<div class="pieces" id="div7"><div id="p7"></div></div>
+<div class="pieces" id="div8"><div id="p8"></div></div>
+<script> 
+(function newFact1() {
+  var facts1 = 
+  [
+  "Claire: What is ;good design; in your opinion?",
+  "Claire: What should good design look like?",
+  "Austin: Does mandating legibility take away from one’s experience of another’s work? ",
+  "Lena: What do you think about the authorship/ownership in this project?",
+  "Maud: Is the smartphone design noir?",
+  "Yiyao: For those humorous noir products, are they noir designs or not?",
+  "Maya: If noir products were made for mass consumption, would there be demand?",
+  "Lena: What is a Noir product you hate? Why?"
+  ];
+
+  var randomFact1 = Math.floor(Math.random() * facts1.length);
+  document.getElementById('p1').innerHTML = facts1[randomFact1];
+})();
+
+(function newFact2() {
+  var facts2 = 
+  [
+  "Carla: I have no position to evaluate whether noir products should exist. However, it has to be said that the existence of some products has indeed solved some tangles faced by mankind, such as suicide computers. It has to be said that the emergence of some black products at the boundary of material civilization is redemption to some extent.",
+  "Maya: I had never heard of design noir until reading this. The Truth Phone is an interesting example of this type of design as it combines a stress analyzer with something as simple as a phone to tell a story. I also really liked the “one love hotel” fridge example to reorder groceries. Pretty cool.",
+  "Antoinette: I have always known the significant role designers have in society, the power to shape culture and determine people’s everyday lives. The Sony Walkman mentioned in the reading is one example which we’ve already taken for granted and don’t think about.",
+  "Maria: Are these products: Ace-Alibi, The Truth Phone and the hotel in Japan, real solutions to the underlying problems? Is that even their purpose, to problem solve? ",
+  "Austin: Having read about Don Norman and the Design of Everyday Things, Norman’s approach is very much the opposite and results in products that don’t confuse or disappoint. Which approach is better? Will design noir sell? How do you even go about describing these types of products to other people unfamiliar with Design Noir?",
+  "Hannah: A product called the Truth Phone combines a voice stress analyser with a telephone, and suggests your partner is lying. What are your thoughts on this? Do you think this product will have some good aspects?",
+  "Yiyao: If there is a difference between everyday life and surreal technology, what should everyday life be like, and what period should be used as the boundary?"
+  ];
+
+  var randomFact2 = Math.floor(Math.random() * facts2.length);
+  document.getElementById('p2').innerHTML = facts2[randomFact2];
+})();
+
+(function newFact3() {
+  var facts3 = 
+  [
+  "Antoinette: Do you think “design noir” is limiting the potentials of reframing how to approach designs that satisfy needs and desires? Why / not?",
+  "Antoinette: What kind of products would you imagine to see when/if large corporations started shifting focus towards embracing danger, excitement, and transgression? Do you already see examples in today’s market?",
+  "Hannah: Do you agree that noir products would be conceptual products, a medium that fuses complex narratives with everyday life.",
+  "Maya: Since design noir takes a spin on film noir -- are there other genres that are similar to film in design? What are they? ",
+  "Carla: If the emergence of a noir product is desirable in human nature, but it is illegal, how should designers and ordinary people choose? "
+  ];
+
+  var randomFact3 = Math.floor(Math.random() * facts3.length);
+  document.getElementById('p3').innerHTML = facts3[randomFact3];
+})();
+
+
+var images = [
+"Lynn/1.jpg", 
+"Lynn/2.jpg", 
+"Lynn/3.jpg",
+"Lynn/4.jpg", 
+"Lynn/5.jpg", 
+"Lynn/6.png",
+"Lynn/7.png", 
+"Lynn/8.png", 
+"Lynn/9.png",
+"Lynn/10.png", 
+"Lynn/11.png"
+];
+
+$('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#p4');
+
+
+(function newFact5() {
+  var facts5 = 
+  [
+  "Maria: Do any of these products (the ones sketched out) exist irl? If so, how have they impacted their users?",
+  "Carla: If a medical noir product is proved to have a great contribution to medicine, will it be widely used and within the scope permitted by law?",
+  "Austin: Does mandating legibility take away from one’s experience of another’s work? ",
+  "Lena: What is a Noir product you like? Why?",
+  "Maud: Have we completely abandoned the possibilities of physical product design for the digital, and are we missing out on innovation because of the focus on the digital?"
+
+  ];
+
+  var randomFact5 = Math.floor(Math.random() * facts5.length);
+  document.getElementById('p5').innerHTML = facts5[randomFact5];
+})();
+
+(function newFact6() {
+  var facts6 = 
+  [
+  "Hannah: Do you agree that noir products would be conceptual products, a medium that fuses complex narratives with everyday life.",
+  "Maya: Since design noir takes a spin on film noir -- are there other genres that are similar to film in design? What are they? ",
+  "Antoinette: Do you think “design noir” is limiting the potentials of reframing how to approach designs that satisfy needs and desires? Why / not?",
+  "Antoinette: What kind of products would you imagine to see when/if large corporations started shifting focus towards embracing danger, excitement, and transgression? Do you already see examples in today’s market?",
+  "Carla: If the emergence of a noir product is desirable in human nature, but it is illegal, how should designers and ordinary people choose? "
+  ];
+
+  var randomFact6 = Math.floor(Math.random() * facts6.length);
+  document.getElementById('p6').innerHTML = facts6[randomFact6];
+})();
+
+(function newFact7() {
+  var facts7 = 
+  ["Maud: The idea that a product can have a 'psychological experience', is sort of taken for granted today, because so much of our experience with the smartphone and the internet is somewhat psychological. Also, now that production and technology has evolved, I think we are so used to seeing weird products for all kinds of purposes, so when reading about the products mentioned in the text, personally I had more of a 'of course that's a thing' type of reaction. But also realizing that a lot of those products or services are now accessible online. For example I'm sure if you search 'airport sounds' you can find something you can use if you are lying about where you are on the phone with someone. It was still interesting to see how product design back then was much more focused on the physical, and it made me wonder if we are missing out on better product solutions today because everything is supposed to be online and smartphone accessible.", 
+  "Hannah: Noir products would be a fusion of psychology and everyday life. This would allow the user to become the protagonist of the narrative, rather than the consumer of the narrative.Electronic products and services could enrich and expand our experience of everyday life rather than closing it down, they could become a medium for experiencing complex aesthetic situations. To achieve this, designers would have to think about products and services very differently. We propose a new category of objects that are complex aesthetic and psychological experiences within everyday life, not like a video or library book. To achieve this, designers would have to think about products and services very differently.",
+  "Yiyao: Most designs are good in their own right, and no designer wants to create bad, dark designs. However, I think the factor that influences these designs is not the person who designs them but the person who uses them. Designers cannot require all users to use the way they are designed. And human beings are complex, and the unpleasant nature of human beings affects the relationship between product design and people. The relationship between the individual and the product is much more complicated than the designer and the product.",
+  "Yiyao: On the other hand, I don't think there is a conflict or a gap between everyday life and surreal technology. I think surreal technology is just a part of modern people's daily life. Of course, any new technological revolution will affect people's everyday lives, and there will probably be higher advances than surreal technology afterward. But we must admit that the development of contemporary electronic products has primarily contributed to the growth of noir design.",
+  "Lena: Noir products are everywhere, but I haven’t truly thought about defining them with the word “Noir”. Anthony Dunne and Fiona Raby describe Noir product as something that allows the user to be the controller and protagonist. But they also comment that these products “perplex rather than comfort”, “creates dilemmas rather than resolving them”. I think this really depends on who the user is. For my last project I needed the sound effect of sending iMessages. I found the sound effect on Youtube. But I was shocked to see that many people under comments said that they were happy to find this sound effect to pretend to be talking to a lot of girls or to fake that they had many friends… The perception of how useful a Noir product really depends on the user’s needs. Obviously these Noir products were born due to emotional or social needs originated from “loneliness, deception, paranoia, hopelessness and lust”. We have to admit that these feelings and needs are human. There is nothing shady about them.",
+  "Antoinette: I think it is vital for designers to understand that our primary jobs are not to submit to capitalism and make things pretty, but to provide solutions. Design Noir is an interesting approach to reevaluating what “real” consumer needs are. I loved the term “ab-user” in the reading — it gives significance to the user experience that highlights the desire path of the products, which leads to the realm of potentials that the products or environments have. I’m not sure if I agree with the darker, rather unethical framework: the unacknowledged needs don’t always have to be in the themes of loneliness / deception / paranoia / hopelessness / lust.",
+  "Carla: A famous psychologist Maslow ever put forward the hierarchy theory of human needs, which means that when people's low-level needs, such as the needs of food, clothing, housing, and transportation are met, they will pursue higher-level spiritual needs, such as the needs of self-realization and respect. With the high development of material civilization and spiritual civilization today and the continuous improvement of economic level, human needs have long gone far beyond these basic needs, even beyond the basic material and spiritual needs, and more pursue spiritual pleasure."
+  ];
+
+  var randomFact7 = Math.floor(Math.random() * facts7.length);
+  document.getElementById('p7').innerHTML = facts7[randomFact7];
+})();
+
+(function newFact8() {
+  var facts8 = 
+  [
+  "Maud: Is the smartphone design noir?",
+  "Yiyao: For those humorous noir products, are they noir designs or not?",
+  "Claire: What is ;good design; in your opinion?",
+  "Lena: What is a Noir product you hate? Why?",
+  "Claire: What should good design look like?",
+  "Austin: Does mandating legibility take away from one’s experience of another’s work? ",
+  "Lena: What do you think about the authorship/ownership in this project?",
+  "Maya: If noir products were made for mass consumption, would there be demand?"
+  ];
+
+  var randomFact8 = Math.floor(Math.random() * facts8.length);
+  document.getElementById('p8').innerHTML = facts8[randomFact8];
+})();
+
+</script>

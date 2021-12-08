@@ -1,0 +1,159 @@
+<head>
+<title>Week 3-4</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+	@font-face {
+    font-family: TitleFont;
+    src: url(AeonikProTRIAL-Regular.otf);
+	}
+	@font-face {
+    font-family: MyFont;
+    src: url(AeonikProTRIAL-Light.otf);
+	}
+
+	#refresh_button{
+		position: absolute;
+		right: 1.1vw;
+		top:4.6vw;
+		width: 2.2vw;
+		height: auto;
+	}
+	#home_button{
+		position: absolute;
+		right: 1vw;
+		top:1.5vw;
+		width: 2.6vw;
+		height: auto;
+	}
+	h3{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		top:0;
+		position: absolute;
+		line-height: 1vw;
+	}
+	h1{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		position: absolute;
+		top:2.5vw;
+	}
+	
+	img{
+		height: auto;
+		vertical-align: middle;
+		text-align: : middle;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.pieces{
+		border-width: 2px;
+		border-style: solid;
+		border-color: black;
+		position: absolute;
+		font-family: TitleFont;
+		font-size:1vw;
+		line-height: 1.3vw;
+		background-color: #ffffff;
+		display: inline-block;
+		text-align: left;
+		margin: auto;	
+		vertical-align: middle;	
+		justify-content: center;
+	}
+	#div1{		
+		top:8vw;
+		left:0.5vw;
+		width: 60vw;
+		height: 22vw;				
+	}
+
+	#div2{		
+		top:30vw;
+		left:0.5vw;
+		width: 60vw;
+		height: 14vw;
+	}
+
+	#div3{		
+		top:8vw;
+		left:60.5vw;
+		width: 38vw;
+		height: 36vw;		
+	}
+
+	#p1, #p2, #p3{
+		position: relative;
+  		float: left;
+  		padding: 30px;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	a:link, a:visited, a:active{
+		text-decoration: none;
+		color:black;
+	}
+	a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+	.links:link, .links:hover{
+		text-decoration: underline;
+		color:blue;
+	}
+
+		
+</style>
+<img id="refresh_button" src="icons/refresh.png" onClick="window.location.reload();"></img>
+<a href="index.html"><img id="home_button" src="icons/home.png"></a>
+<h3>Visual Culture Seminar 2021 Fall</h3>
+<h1>Week 3-4  - Clara Balaguer, Ken Garland, Julian Hanna</h1>
+<div class="pieces" id="div1"><div id="p1"></div></div>
+<div class="pieces" id="div2"><div id="p2"></div></div>
+<div class="pieces" id="div3"><a href="2-2.html"><div id="p3"></div></a></div>
+
+<script> 
+(function newFact1() {
+  var facts1 = 
+  [
+  "<a href='https://vimeo.com/amtparsons/review/612632388/ee9de2b8d7'>Luiza: How is the experience of collaboration with a graphic designer?</a>", 
+  "<a href='https://vimeo.com/amtparsons/review/612632388/ee9de2b8d7'>Lynn: do you plan to return to the Philippines? How would that change your practice of study or channels and mediums you have?</a>",
+  "<a href='https://vimeo.com/amtparsons/review/612632388/ee9de2b8d7'>Clara: Working with a graphic designer has been very educational because it taught me skills, and it's been quite interesting as a writer of learning how to lay off my text and be in control of the visual hierarchy basement your texts and understanding of the text estimated and sometimes you're the same thing it's like you know using a small text field to write an essay rather than writing an essay i think thinking of layouts or devices.</a>",
+  "<a href='https://vimeo.com/amtparsons/review/612632388/ee9de2b8d7'>Clara: The first comeback because i became a teenage mom, and the second time i came back because of the illness of the family, and after that, i stayed there for ten years. It was tough for me to come back because of the 'outsider' and 'insider' things, but you can always get some new ideas there and come back here thinking you can save the world. Getting the change to know the source of knowledge can be reversed. but right now i don't know the third time i will go back for an extended visit.</a>"
+  ];
+
+  var randomFact1 = Math.floor(Math.random() * facts1.length);
+  document.getElementById('p1').innerHTML = facts1[randomFact1];
+})();
+
+(function newFact2() {
+  var facts2 = 
+  [ 
+  "<a class='links' href='https://www.asu.edu/courses/aph294/total-readings/lippard%20--%20thelureofthelocal.pdf'>Lure of the Local: Sense of Place in a Multicentered Society, Lucy R. Lippard (1997)</a>",
+  "<a class='links' href='https://www.craftcouncil.org/programs/conference'>4 object stories presented at the American Craft Council Conference Present Tensein Philadelphia (2019)</a>"
+ ];
+
+  var randomFact2 = Math.floor(Math.random() * facts2.length);
+  document.getElementById('p2').innerHTML = facts2[randomFact2];
+})();
+
+(function newFact3() {
+  var facts3 = 
+  [ "Austin: In Lure of the Local, I was particularly drawn to the way Lippard defines “place” as something that is “latitudinal and longitudinal within the map of a person's life. It is temporal and spatial, personal and political. A layered location replete with human histories and memories. Place has width as well as depth.” The object stories were really interesting to listen to and super insightful when putting together my own Project 1.",
+  "Carla: The understanding of location is inseparable from three aspects: land, history and culture. The three seemingly unrelated parts are inadvertently integrated, affecting the composition of the place and the people living in it. The land is an important basis for life. Life is not limited to people but also includes plants and animals. The story that happened on the land is an important memory of people, and it is the history of this land that affects people's thoughts. Culture is often understood as defining what a place means to people. The location provides a carrier for history, and history promotes the formation of culture. ",
+  "Antoinette: Humans are emotional beings, so it is inevitable for us to feel attached to objects and places. It is easy to understand how tangible artefacts carry significant meaning to individuals, communities, and cultures; but I was particularly impressed by Lippard’s in-depth contemplation of locality and its intimate relationship with us. Rid us of materialism, we would still have to depend on places, as we continue to take up space and have memory. I especially enjoyed Majozo’s quote, that 'the challenge for the artist is to search for the good and make it matter, to map the terrain of the outside world through confrontation with the inner territory of the soul'. It bridges the main message behind this week’s readings and listenings: that art and human creativity is just as, if not more important than objects and lands to cultures; and that in order to create meaningfully, we have to stay connected with our landscapes.", 
+  "Maria: In The Lure and the Local Lippard suggests that “nature will provide nourishment that social life cannot.” For this to be true, the subject must have nature in close proximity, but what exactly does she mean by nature? Is it possible for people to get that type of nourishment when they have only experienced urban settings? This made me wonder if child development and even adult behaviors are affected by proximity to nature? Will technology change this notion?",
+  "Yiyao: Lucy explains the definition of land with deep thought, and I have never thought about the differences between landscape, place, nature, view, and scenery before. She even talks about the origin and the meaning of this word. Then, she comes up with the idea of the relationships between land, culture, religion, individuals. They are being affected while they are influencing each other’s development. What I am interested in the most is that she claims “Fengshui is ‘environmental psychologist,’ offering a ‘spiritual approach to design and architecture.'(Page 15) I think this is a great example to make me understand better about her point of view.",
+  "Maya: The author speaks about the relationship between land, history, and culture and their impact on society. She explains how creativity is a product of our rich surroundings. Her quote on page 9, 'I asked twenty university students to name a place they felt they belonged, and they could not,' I related to. Especially living most of my life outside of the US and now moving here, it’s weird. The blend of cultures can be confusing and having one place seems too little. ",
+  "Lena: Lucy R.Lippard said that“the lure of the local” is the “geographical component of the psychological need to belong somewhere”. I feel that the need to belong somewhere seems to be something we are born with and cannot resist. I feel safe to be in familiar places. If in an unfamiliar city, I feel safe to go back to the cafe that I first went to when I arrived. I think our attachment to places originates from the fact that we want to feel secure. Lucy has a personal perspective but she also makes a firm voice by referring to writers from history. She goes into the very depth and I really enjoyed knowing about distinctive views."
+  ];
+
+  var randomFact3 = Math.floor(Math.random() * facts3.length);
+  document.getElementById('p3').innerHTML = facts3[randomFact3];
+})();
+
+</script>

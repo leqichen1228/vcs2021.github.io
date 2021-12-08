@@ -1,0 +1,287 @@
+<head>
+<title>Week 3-4</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+	@font-face {
+    font-family: TitleFont;
+    src: url(AeonikProTRIAL-Regular.otf);
+	}
+	@font-face {
+    font-family: MyFont;
+    src: url(AeonikProTRIAL-Light.otf);
+	}
+
+	#refresh_button{
+		position: absolute;
+		right: 1.1vw;
+		top:4.6vw;
+		width: 2.2vw;
+		height: auto;
+	}
+	#home_button{
+		position: absolute;
+		right: 1vw;
+		top:1.5vw;
+		width: 2.6vw;
+		height: auto;
+	}
+	h3{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		top:0;
+		position: absolute;
+		line-height: 1vw;
+	}
+	h1{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		position: absolute;
+		top:2.5vw;
+	}
+	img{
+		height: auto;
+		vertical-align: middle;
+		text-align: center;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.pieces{
+		border-width: 2px;
+		border-style: solid;
+		border-color: black;
+		position: absolute;
+		font-family: TitleFont;
+		font-size:1vw;
+		line-height: 1.3vw;
+		background-color: #ffffff;
+		display: inline-block;
+		text-align: left;
+		margin: auto;	
+		vertical-align: middle;	
+		justify-content: center;		
+	}	
+	
+	#div1{		
+		top:8vw;
+		left:0.5vw;
+		width: 20vw;
+		height: 12vw;
+	}
+		
+	#div2{		
+		top:20vw;
+		left:0.5vw;
+		width: 20vw;
+		height: 24vw;
+
+	}
+	#div3{		
+		top:8vw;
+		left:20.5vw;
+		width: 47.6vw;
+		height: 12vw;		
+	}
+	#div4{		
+		top:20vw;
+		left:20.5vw;
+		width: 18.2vw;
+		height: 14.6vw;	
+		line-height: 14.6vw;		
+	}
+	#div5{		
+		top:20vw;
+		left:38.7vw;
+		width: 29.4vw;
+		height: 14.6vw;	
+	}
+	#div6{		
+		top:34.6vw;
+		left:20.5vw;
+		width: 47.6vw;
+		height: 9.4vw;		
+	}
+	#div7{		
+		top:8vw;
+		left:68.2vw;
+		width: 30.3vw;
+		height: 26.6vw;		
+	}
+	#div8{		
+		top:34.6vw;
+		left:68.2vw;
+		width: 30.3vw;
+		height: 9.4vw;		
+	}
+
+	#p1, #p2, #p3, #p5, #p6, #p7, #p8{
+		position: relative;
+  		float: left;
+  		padding: 30px;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+	#p4{
+		position: relative;
+  		float: left;
+  		height:100%;
+  		width: auto;
+  		vertical-align: middle;
+  		padding: 0;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	a:link, a:visited, a:active{
+		text-decoration: none;
+		color:black;
+	}
+	a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+
+
+		
+</style>
+<img id="refresh_button" src="icons/refresh.png" onClick="window.location.reload();">
+<a href="index.html"><img id="home_button" src="icons/home.png"></a>
+<h3>Visual Culture Seminar 2021 Fall</h3>
+<h1>Week 3-4  - Clara Balaguer, Ken Garland, Julian Hanna</h1>
+<div class="pieces" id="div1"><div id="p1"></div></div>
+<div class="pieces" id="div2"><div id="p2"></div></div>
+<div class="pieces" id="div3"><div id="p3"></div></div>
+<div class="pieces" id="div4"><a href="https://www.bakonline.org/person/clara-balaguer/"><div id="p4"></div></a></div>
+<div class="pieces" id="div5"><div id="p5"></div></div>
+<div class="pieces" id="div6"><div id="p6"></div></div>
+<div class="pieces" id="div7"><div id="p7"></div></div>
+<div class="pieces" id="div8"><div id="p8"></div></div>
+<script> 
+(function newFact1() {
+  var facts1 = 
+  [
+  "Maria: How is the concept of digital ownership changing? What are your thoughts on NFTs?", 
+  "Hannah: What do you think about 'If there is to be gender equality, then both genders need to make a difference in feminism'?",
+  "Maria: What are the notions that the term cyberfeminism evoke? Have you experienced negative or positive responses to this term? ",
+  "Carla: How is gender different nowadays compared to early last century?", 
+  "Antoinette: How did you feel about the index when you first visited? What was your way in navigating the website?", 
+  "Maya: How does she handle the formatting? Is it MLA or Chicago? And why?",
+  "Claire: Do you think the listing of the cyber feminist projects is clear / easy to navigate?"
+  ];
+
+  var randomFact1 = Math.floor(Math.random() * facts1.length);
+  document.getElementById('p1').innerHTML = facts1[randomFact1];
+})();
+
+(function newFact2() {
+  var facts2 = 
+  ["Claire: As Lippard mentioned, that her soul is at home in a certain place. I was wondering - Does home always have to be a place, or can it also be a person, for example?",
+  "Lena: Jennifer Ling Datchuk talked about how an object could make people feel very different, as a gun makes the owner feel safe but others feel dangerous. I wonder if an object means nothing alone but is given significance by the user and the way it’s used?", 
+  "Maya: Her quote on page 9, “I asked twenty university students to name a place they felt they belonged, and they could not,” I related to. Especially living most of my life outside of the US and now moving here, it’s weird. The blend of cultures can be confusing and having one place seems too little. ",
+  "Maria: Lippard defines culture as an “euphemism for race and ethnic background”, do you agree with what she proposes? ",
+  "Austin: Vashti DuBois shares the significance and meaning of handmade dolls that have been passed down to her. She frames her object story around family. This had me thinking, do we start losing the very nature and meaning of objects when they have been passed down through the generations? Do we begin to assign value to an object based on who gave it to you rather than the utility or purpose the object was originally intended for?"
+  ];
+
+  var randomFact2 = Math.floor(Math.random() * facts2.length);
+  document.getElementById('p2').innerHTML = facts2[randomFact2];
+})();
+
+(function newFact3() {
+  var facts3 = 
+  ["Claire: It was surprising to me that the author asked 20 students about a place where they belong and most of them could not give an answer. Can you name a place that you belong to?",
+  "Lena: Lucy quotes from Henry Glassie that “In place, the person is part of the history”. It’s something that we often neglect when we walk in our neighborhood. Do you notice traces of people in history when you observe a place? How?",
+  "Maya: The author speaks about the relationship between land, history, and culture and their impact on society. She explains how creativity is a product of our rich surroundings. ",
+  "Austin: Lippard mentions the relationship between culture and nature. She concludes that both meet somewhere in the middle. I was wondering how advancements in science and technology may play a role in the relationship between culture and nature."
+  ];
+
+  var randomFact3 = Math.floor(Math.random() * facts3.length);
+  document.getElementById('p3').innerHTML = facts3[randomFact3];
+})();
+
+
+var images = [
+"Clara/1.jpg", 
+"Clara/2.jpg", 
+"Clara/3.jpg",
+"Clara/4.jpg", 
+"Clara/5.jpg", 
+"Clara/6.jpg",
+"Clara/7.jpg", 
+"Clara/8.jpg", 
+"Clara/9.jpg",
+"Clara/10.jpg", 
+"Clara/11.jpg", 
+"Clara/12.jpg"
+];
+
+$('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#p4');
+
+
+(function newFact5() {
+  var facts5 = 
+  [
+  "Maya: Why do people tend to forget that history goes until yesterday? ",
+  "Yiyao: Does place influence culture more or culture influence place more？",
+  "Antoinette: Are you / Is there anyone you know who is truly “monocultured”?",
+  "Antoinette: What’s your definition of “home”?",
+  "Hannah: In your opinion, how does the location or locations of certain media change their value?",
+  "Carla: How does the spirit of crafts affect the lives of local people?",
+  "Maria: Lippard defines culture as an “euphemism for race and ethnic background”, do you agree with what she proposes? "
+
+  ];
+
+  var randomFact5 = Math.floor(Math.random() * facts5.length);
+  document.getElementById('p5').innerHTML = facts5[randomFact5];
+})();
+
+(function newFact6() {
+  var facts6 = 
+  [
+  "Maya: If culture and place are hand in hand in how they affect one another, which gets affected first? Or is it a chicken and egg argument? ",
+  "Yiyao: What makes you have the feeling that you belong to a place?",
+  "Maria: Lippard describes history as “fiction written by the conquerors”, if this is accurate, is there a way to approach history in a non fictional sense? ",
+  "Carla: How does history affect culture? How does culture affect the development of a place? ",
+  "Antoinette: What’s your definition of “home”?",
+  "Hannah: In your opinion, how does the location or locations of certain media change their value?"
+
+  ];
+
+  var randomFact6 = Math.floor(Math.random() * facts6.length);
+  document.getElementById('p6').innerHTML = facts6[randomFact6];
+})();
+
+(function newFact7() {
+  var facts7 = 
+  [ "Austin: In Lure of the Local, I was particularly drawn to the way Lippard defines “place” as something that is “latitudinal and longitudinal within the map of a person's life. It is temporal and spatial, personal and political. A layered location replete with human histories and memories. Place has width as well as depth.” The object stories were really interesting to listen to and super insightful when putting together my own Project 1.",
+  "Carla: The understanding of location is inseparable from three aspects: land, history and culture. The three seemingly unrelated parts are inadvertently integrated, affecting the composition of the place and the people living in it. The land is an important basis for life. Life is not limited to people but also includes plants and animals. The story that happened on the land is an important memory of people, and it is the history of this land that affects people's thoughts. Culture is often understood as defining what a place means to people. The location provides a carrier for history, and history promotes the formation of culture. ",
+  "Antoinette: Humans are emotional beings, so it is inevitable for us to feel attached to objects and places. It is easy to understand how tangible artefacts carry significant meaning to individuals, communities, and cultures; but I was particularly impressed by Lippard’s in-depth contemplation of locality and its intimate relationship with us. Rid us of materialism, we would still have to depend on places, as we continue to take up space and have memory. I especially enjoyed Majozo’s quote, that 'the challenge for the artist is to search for the good and make it matter, to map the terrain of the outside world through confrontation with the inner territory of the soul'. It bridges the main message behind this week’s readings and listenings: that art and human creativity is just as, if not more important than objects and lands to cultures; and that in order to create meaningfully, we have to stay connected with our landscapes.", 
+  "Maria: In The Lure and the Local Lippard suggests that “nature will provide nourishment that social life cannot.” For this to be true, the subject must have nature in close proximity, but what exactly does she mean by nature? Is it possible for people to get that type of nourishment when they have only experienced urban settings? This made me wonder if child development and even adult behaviors are affected by proximity to nature? Will technology change this notion?",
+  "Yiyao: Lucy explains the definition of land with deep thought, and I have never thought about the differences between landscape, place, nature, view, and scenery before. She even talks about the origin and the meaning of this word. Then, she comes up with the idea of the relationships between land, culture, religion, individuals. They are being affected while they are influencing each other’s development. What I am interested in the most is that she claims “Fengshui is ‘environmental psychologist,’ offering a ‘spiritual approach to design and architecture.'(Page 15) I think this is a great example to make me understand better about her point of view.",
+  "Maya: The author speaks about the relationship between land, history, and culture and their impact on society. She explains how creativity is a product of our rich surroundings. Her quote on page 9, 'I asked twenty university students to name a place they felt they belonged, and they could not,' I related to. Especially living most of my life outside of the US and now moving here, it’s weird. The blend of cultures can be confusing and having one place seems too little. ",
+  "Lena: Lucy R.Lippard said that“the lure of the local” is the “geographical component of the psychological need to belong somewhere”. I feel that the need to belong somewhere seems to be something we are born with and cannot resist. I feel safe to be in familiar places. If in an unfamiliar city, I feel safe to go back to the cafe that I first went to when I arrived. I think our attachment to places originates from the fact that we want to feel secure. Lucy has a personal perspective but she also makes a firm voice by referring to writers from history. She goes into the very depth and I really enjoyed knowing about distinctive views."
+  ];
+
+  var randomFact7 = Math.floor(Math.random() * facts7.length);
+  document.getElementById('p7').innerHTML = facts7[randomFact7];
+})();
+
+(function newFact8() {
+  var facts8 = 
+  [
+  "Maria: How is the concept of digital ownership changing? What are your thoughts on NFTs?", 
+  "Carla: How is gender different nowadays compared to early last century?", 
+  "Antoinette: How did you feel about the index when you first visited? What was your way in navigating the website?", 
+  "Maya: How does she handle the formatting? Is it MLA or Chicago? And why?",
+  "Claire: Do you think the listing of the cyber feminist projects is clear / easy to navigate?",
+  "Hannah: What do you think about 'If there is to be gender equality, then both genders need to make a difference in feminism'?",
+  "Maria: What are the notions that the term cyberfeminism evoke? Have you experienced negative or positive responses to this term? "
+  ];
+
+  var randomFact8 = Math.floor(Math.random() * facts8.length);
+  document.getElementById('p8').innerHTML = facts8[randomFact8];
+})();
+
+</script>

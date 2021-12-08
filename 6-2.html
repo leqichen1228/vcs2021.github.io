@@ -1,0 +1,281 @@
+<head>
+<title>Week 8-9</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<style type="text/css">
+	@font-face {
+    font-family: TitleFont;
+    src: url(AeonikProTRIAL-Regular.otf);
+	}
+	@font-face {
+    font-family: MyFont;
+    src: url(AeonikProTRIAL-Light.otf);
+	}
+
+	#refresh_button{
+		position: absolute;
+		right: 1.1vw;
+		top:4.6vw;
+		width: 2.2vw;
+		height: auto;
+	}
+	#home_button{
+		position: absolute;
+		right: 1vw;
+		top:1.5vw;
+		width: 2.6vw;
+		height: auto;
+	}
+	h3{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		top:0;
+		position: absolute;
+		line-height: 1vw;
+	}
+	h1{
+		font-size: 2.5vw;
+		font-family: MyFont;
+		position: absolute;
+		top:2.5vw;
+	}
+	img{
+		height: auto;
+		vertical-align: middle;
+		text-align: center;
+		max-height: 100%;
+		max-width: 100%;
+	}
+	.pieces{
+		border-width: 2px;
+		border-style: solid;
+		border-color: black;
+		position: absolute;
+		font-family: TitleFont;
+		font-size:1vw;
+		line-height: 1.3vw;
+		background-color: #ffffff;
+		display: inline-block;
+		text-align: left;
+		margin: auto;	
+		vertical-align: middle;	
+		justify-content: center;		
+	}	
+	
+	#div1{		
+		top:8vw;
+		left:0.5vw;
+		width: 20vw;
+		height: 12vw;
+	}
+		
+	#div2{		
+		top:20vw;
+		left:0.5vw;
+		width: 20vw;
+		height: 24vw;
+
+	}
+	#div3{		
+		top:8vw;
+		left:20.5vw;
+		width: 47.6vw;
+		height: 12vw;		
+	}
+	#div4{		
+		top:20vw;
+		left:20.5vw;
+		width: 18.2vw;
+		height: 14.6vw;	
+		line-height: 14.6vw;		
+	}
+	#div5{		
+		top:20vw;
+		left:38.7vw;
+		width: 29.4vw;
+		height: 14.6vw;	
+	}
+	#div6{		
+		top:34.6vw;
+		left:20.5vw;
+		width: 47.6vw;
+		height: 9.4vw;		
+	}
+	#div7{		
+		top:8vw;
+		left:68.2vw;
+		width: 30.3vw;
+		height: 26.6vw;		
+	}
+	#div8{		
+		top:34.6vw;
+		left:68.2vw;
+		width: 30.3vw;
+		height: 9.4vw;		
+	}
+
+	#p1, #p2, #p3, #p5, #p6, #p7, #p8{
+		position: relative;
+  		float: left;
+  		padding: 30px;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+	#p4{
+		position: relative;
+  		float: left;
+  		height:100%;
+  		width: auto;
+  		vertical-align: middle;
+  		padding: 0;
+  		top: 50%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+	}
+
+	a:link, a:visited, a:active{
+		text-decoration: none;
+		color:black;
+	}
+	a:hover{
+		text-decoration: none;
+		color:blue;
+	}
+
+
+		
+</style>
+<img id="refresh_button" src="icons/refresh.png" onClick="window.location.reload();">
+<a href="index.html"><img id="home_button" src="icons/home.png"></a>
+<h3>Visual Culture Seminar 2021 Fall</h3>
+<h1>Week 8-9 - Paul Soulellis</h1>
+<div class="pieces" id="div1"><div id="p1"></div></div>
+<div class="pieces" id="div2"><div id="p2"></div></div>
+<div class="pieces" id="div3"><div id="p3"></div></div>
+<div class="pieces" id="div4"><a href="https://soulellis.com/"><div id="p4"></div></a></div>
+<div class="pieces" id="div5"><div id="p5"></div></div>
+<div class="pieces" id="div6"><div id="p6"></div></div>
+<div class="pieces" id="div7"><div id="p7"></div></div>
+<div class="pieces" id="div8"><div id="p8"></div></div>
+<script> 
+(function newFact1() {
+  var facts1 = 
+  [
+  "Claire: What is ;good design; in your opinion?",
+  "Claire: What should good design look like?",
+  "Austin: Does mandating legibility take away from one’s experience of another’s work? ",
+  "Lena: What do you think about the authorship/ownership in this project?",
+  "Hannah: What do you think about when he said”Gender is not a metaphor.”?",
+  "Yiyao: Has queer typography always existed or was it created?"
+  ];
+
+  var randomFact1 = Math.floor(Math.random() * facts1.length);
+  document.getElementById('p1').innerHTML = facts1[randomFact1];
+})();
+
+(function newFact2() {
+  var facts2 = 
+  ["Maya: I have never heard of queer typography until reading this. I didn’t think of typography as something that has political characteristics.  or characteristics to represent a marginalized population. But type design is a business of making and selling fonts -- is a type of commerce and therefore has political implications.",
+  "Austin: Going into this week’s reading, I knew nothing about queer typography and nothing of Paul Soulellis’s work. After familiarizing myself with his work, I was particularly drawn to the importance of typefaces and how fonts 'frequently uphold and support imperial power' as he references the recent CIA rebrand. I also found it interesting how expansive the idea of queerness is and just how difficult it is to define it.", 
+  "Lena: It’s interesting to me that the fonts that Nat Pyper collected were not created to become typefaces. They were just design elements used on queer publications. I never thought about making typefaces(putting together letters) as a way to remember certain people and the acts they did. Typefaces are timeless, and indeed a great way 'to radically disseminate histories, to reference queer acts'.",
+  "Austin: As I was reading Soulellis’ piece, I noticed the unique design of the page and had me wondering why Times New Roman and double spacing are usually the norm when it comes to formal pieces of writing (e.g. college applications, academic papers, etc.)?",
+  "Claire: I’ve read the text on the laptop and also on the phone. I think he designed the desktop version pretty 'playful' and it seems like he didn’t follow any 'standart design rules'. It looks different and I like it. But I also think the design makes it a little less  legible. The mobile version was designed very simple - which made it easier for me to read and focus on the text. How do you feel about the desktop version / the design?"
+  ];
+
+  var randomFact2 = Math.floor(Math.random() * facts2.length);
+  document.getElementById('p2').innerHTML = facts2[randomFact2];
+})();
+
+(function newFact3() {
+  var facts3 = 
+  ["Austin: Is it only for legibility purposes? As a designer, I feel that the presentation of my work is just as important as the content of my work. ",
+   "Antoinette: Has your understanding of “queerness” changed before and after the reading, and how so?" ,
+   "Antoinette: What do you think about the referenced projects in the reading? Do they exemplify what “queer type” is?",
+   "Maria: How can someone resist what's considered “good design” and simultaneously make a living as a designer?",
+   "Maria: In the essay, Soulellis mentions that he wants to keep the definition of queer typography poetic, allowing it to continue loosely. Can there be negative repercussions to the vagueness of the term? "
+  ];
+
+  var randomFact3 = Math.floor(Math.random() * facts3.length);
+  document.getElementById('p3').innerHTML = facts3[randomFact3];
+})();
+
+
+var images = [
+"Paul/1.jpg", 
+"Paul/2.jpg", 
+"Paul/3.jpg",
+"Paul/4.jpg", 
+"Paul/5.jpg", 
+"Paul/6.jpg",
+"Paul/7.jpg", 
+"Paul/8.jpg", 
+"Paul/9.jpg",
+"Paul/10.jpg", 
+"Paul/11.jpg",
+"Paul/12.jpg", 
+"Paul/13.jpg"
+];
+
+$('<img class="fade-in" src="' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#p4');
+
+
+(function newFact5() {
+  var facts5 = 
+  [
+  "Maya: How popular is queer typography and how often is it used? ",
+  "Yiyao: Besides queer typography, are there any other similar existences in design?",
+  "Austin: Does mandating legibility take away from one’s experience of another’s work? ",
+  "Lena: What do you think about the authorship/ownership in this project?",
+  "Hannah: What do you think about when he said”Gender is not a metaphor.”?"
+  ];
+
+  var randomFact5 = Math.floor(Math.random() * facts5.length);
+  document.getElementById('p5').innerHTML = facts5[randomFact5];
+})();
+
+(function newFact6() {
+  var facts6 = 
+  [
+  "Maria: In the essay, Soulellis mentions that he wants to keep the definition of queer typography poetic, allowing it to continue loosely. Can there be negative repercussions to the vagueness of the term? ",
+  "Maria: How does this concept apply to different cultures with their own alphabets and typography applications? ",
+  "Lena: If you were to make a typeface by collecting existing type elements and not designing anything new, what would you do? Where would you start?",
+  "Maya: What other types of political typography are there? Are there other types that represent minorities? ",
+  "Yiyao: Besides queer typography, are there any other similar existences in design?"
+  ];
+
+  var randomFact6 = Math.floor(Math.random() * facts6.length);
+  document.getElementById('p6').innerHTML = facts6[randomFact6];
+})();
+
+(function newFact7() {
+  var facts7 = 
+  [" Claire: I really liked “what is queer typography” by Paul Soulellis. It was very interesting to read! I've never heard or thought of „queer typography“ before. I think Soulellis deals with extremely important topics (queerness, gender, sexuality, politics, racism, equality, (protest) movements, history, capitalism, politics, etc.) in connection with typography. In his text he describes how he defines the term 'queer typography'  - which is not that easy. I really liked this quote : 'And I think that covers a lot of what queerness means: an attitude in the face of conformity, an attitude in the sea of passivity, an attitude to say yes when others say no. And that’s poetic and abstract, but that’s fine for our thesis today.'. He also writes about 'the idea of perfect legibility, and the myth of the lone type designer as genius author' - he questions the concept of good design and talks about breaking the rules of „good design“. This again reminds me of the previous quote : 'an attitude to say yes when others say no'.. be different and don’t follow the rules or what other people think is right - be yourself.", 
+  "Carla: Paul Soulellis, known as an artist and educator, 'I've been looking for queer typography. Is anyone else out there? Who else is searching? I wonder if this is even a valid question.'. He is committed to non-profit organization that supports artists, writers, and activists with access to space, tools, and other resources for queer publishing. His practice includes teaching, writing and experimental publishing, with a focus on queer methods and network culture. Before the prosperity of online media, traditional media displayed mainstream social culture. Compared with marginal cultures such as queer culture, they have been struggling in social culture. The emergence of online media uses its temporal and spatial virtuality and the authenticity of audience perception. To make queer culture spread among the public, and have a huge impact on the identification of queer identity, the development of queer cultural practice activities and the public's acceptance of queer culture.",
+  "Antoinette: I remember talking to my friends about how Design is not the most accessible career path to many, since you need to first own a functioning computer with power and internet as well as multiple software tools, and then the investment in time to learn and practice the tools and the theories. It was interesting to read about how the 80s and 90s publication especially in the gay and lesbian liberation context reflects the limits and inequities and homemade design as a form of survival. I never thought about typographic rules being analogized as a political system to be rebelled against. I appreciate the open invite to creating good trouble, and hope more designers and creatives can acknowledge their power in not conforming to systematic conventions.",
+  "Maria: Paul Soulellis is searching for other histories in the realm of typography that don’t focus on what's expected or considered successful. Instead he’s interested in ways to resists these ideals by creating queer work. From a very young age we understand through cognitive experience how typography should work and the purpose it serves, never questioning its political implications. It’s obsession with control, legibility and precision became the standard and therefore categorized what diverged from this norm as 'bad design'.",
+  "Lena: For Paul Soulellis, using metaphors like rainbow is not enough for queer acts. He argues that “the use of metaphor here shuts things down and fixes them into place.” But he also acknowledges that there is always “an idealized reading experience” as an expectation that most people hold. I think it’s always easier for us to distribute an idea with graphic symbols because they are more explicit than typographic ones. It’s the problem of legibility and the time people are willing to spend on it. The “secret languages” are only eligible to their specific community. When can we be confident enough that people would listen and try to understand, to “perform deviant acts of design in the face of conformity”?",
+  "Hannah: I have never known or heard of queer typography, so reading this article has given me a little insight into it. I think I will continue to learn about it in the future.The article says”This was stated to me in another way by type designer Robin Mientjes, who said that when asked what they thought queer design was, replied: attitude. 'And I think that covers a lot of what queerness means: an attitude in the face of conformity, an attitude in the sea of passivity, an attitude to say yes when others say no. And that’s poetic and abstract, but that’s fine for our thesis today.'In my understanding, attitude is important. Many times we are so insistent on doing what is right in the eyes of others that we forget what we really want to do in our hearts.",
+  "Yiyao: I think queer typography, like sexual minorities, has the meaning of breaking traditional stereotypes. In my opinion, this meaning is a kind of progress, which is critical thinking under different issues, for not just obeying the masses. It is also this liberation of nature that allows our society to have more possibilities. Secondly, I think queer typography and sexual minorities are also a relationship of mutual achievement, queer typography helps sexual minorities be more visible in society, and the theme of sexual minorities also helps queer typography have more meaning besides the visual difference."
+  ];
+
+  var randomFact7 = Math.floor(Math.random() * facts7.length);
+  document.getElementById('p7').innerHTML = facts7[randomFact7];
+})();
+
+(function newFact8() {
+  var facts8 = 
+  [
+  "Austin: Is it only for legibility purposes? As a designer, I feel that the presentation of my work is just as important as the content of my work. ",
+   "Antoinette: Has your understanding of “queerness” changed before and after the reading, and how so?" ,
+   "Antoinette: What do you think about the referenced projects in the reading? Do they exemplify what “queer type” is?",
+   "Maria: How can someone resist what's considered “good design” and simultaneously make a living as a designer?",
+   "Maria: In the essay, Soulellis mentions that he wants to keep the definition of queer typography poetic, allowing it to continue loosely. Can there be negative repercussions to the vagueness of the term? "
+  ];
+
+  var randomFact8 = Math.floor(Math.random() * facts8.length);
+  document.getElementById('p8').innerHTML = facts8[randomFact8];
+})();
+
+</script>
